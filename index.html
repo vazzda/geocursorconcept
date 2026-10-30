@@ -7,153 +7,154 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="gate" id="gate">
-<div class="stack-8">
-<h1 class="t-l b">GEOcursor</h1>
-<input class="field" type="password" id="gate-pass" placeholder="Пароль" autocomplete="current-password">
-<a class="btn wide" href="#" data-action="unlock">Войти</a>
-<div class="t-s sec" id="gate-error" hidden>Неверный пароль</div>
+<div class="password-gate" id="gate">
+<div class="vertical-stack-8">
+<h1>GEOcursor</h1>
+<input class="text-field" type="password" id="gate-pass" placeholder="Пароль" autocomplete="current-password">
+<a class="push-button full-width" href="#" data-action="unlock">Войти</a>
+<div class="text-small text-secondary" id="gate-error" hidden>Неверный пароль</div>
 </div>
 </div>
 <div id="app">
 <div data-block="topbar"></div>
-<section class="screen" id="login">
-<h1 class="t-l b">Вход</h1>
-<div class="row-16">
-<a class="btn meta" href="#welcome">Новый пользователь</a>
-<a class="btn meta" href="#main">Постоянный пользователь</a>
+<section class="page-screen" id="login">
+<h1>Вход</h1>
+<div class="horizontal-row-16">
+<a class="push-button design-meta" href="#welcome">Новый пользователь</a>
+<a class="push-button design-meta" href="#main">Постоянный пользователь</a>
 </div>
+<a class="push-button design-meta" href="#admin">Администратор</a>
 </section>
-<section class="screen" id="welcome"><div class="cols">
+<section class="page-screen" id="welcome"><div class="three-columns">
 <div data-block="catalogue" data-state="empty"></div>
-<div class="box bd-2s stack-16">
-<h1 class="t-l b">Empty state</h1>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<h1>Empty state</h1>
 <div data-block="section" data-label="Welcome" data-variants="marketing:marketing,manual:manual,wizard:wizard,UI for dummies:dummies,faq:faq">
-<div class="stack-8" data-variant="marketing">
+<div class="vertical-stack-8" data-variant="marketing">
 <p>GEOcursor — рабочее пространство геолога, в котором документы, карты, слои ГИС и предметные агенты живут в одном проекте. Загрузите отчёты, подключите ГИС, задайте контур площади — и дальше с материалами работает не поиск по папкам, а агент, который читает их целиком.</p>
 <p>Спросите о разломах, рудных точках или магнитных аномалиях — и получите ответ со ссылками на страницы отчётов и слои карты. Агент собирает паспорт объекта, строит расчётную сетку, готовит таблицы и карты, а команда видит, кто что сделал и когда.</p>
 <p>Начните с одного проекта: пара документов и контур лицензии — и через десять минут у вас первый геотизер.</p>
 </div>
-<div class="stack-8" data-variant="manual">
-<h2 class="t-m b">Проекты</h2>
+<div class="vertical-stack-8" data-variant="manual">
+<h2>Проекты</h2>
 <p>Проект — это одна площадь, месторождение или полевой сезон. В нём хранятся цель, геоконтекст, подключённые источники ГИС, документы и всё, что агенты сделали по ним.</p>
-<h2 class="t-m b">Команда</h2>
+<h2>Команда</h2>
 <p>Участники проекта видят общую историю работы: кто загрузил слои, кто построил сетку, кто выпустил карту. Командные проекты доступны всем участникам, закреплённые — только вам.</p>
-<h2 class="t-m b">Агенты</h2>
+<h2>Агенты</h2>
 <p>Агент — помощник, с которым вы говорите в чате. Он читает корпус проекта, отвечает со ссылками на документы и создаёт артефакты: разрезы, сетки, отчёты. Агента выбирают под задачу: геолог, геофизик, геохимик, структурный геолог, агент ДЗЗ.</p>
-<h2 class="t-m b">Школы</h2>
+<h2>Школы</h2>
 <p>Школа — способ работы, которому следует агент: методики, стандарты и единицы, порядок проверки и оформления результатов. Выберите школу, чтобы ответы соответствовали практике вашей команды.</p>
-<h2 class="t-m b">Корпус</h2>
+<h2>Корпус</h2>
 <p>Корпус — всё, что агент может читать в проекте: разобранные документы, слои ГИС, проверенные артефакты. Проверка документа показывает, что попало в корпус, а что не удалось прочитать.</p>
-<h2 class="t-m b">Настройки</h2>
+<h2>Настройки</h2>
 <p>В настройках проекта задаются источник ГИС, система координат и ответственные за проверку; в общих настройках — язык интерфейса и подсветка доступных действий.</p>
 </div>
-<div class="stack-8" data-variant="wizard">
-<div class="col-8">
-<a class="btn wide" href="#new-project">Создать проект</a>
-<a class="btn wide">Подключить ГИС</a>
-<a class="btn wide">Собрать корпус</a>
-<a class="btn wide">Пригласить команду</a>
-<a class="btn wide">Выбрать агента</a>
+<div class="vertical-stack-8" data-variant="wizard">
+<div class="flex-column-8">
+<a class="push-button full-width" href="#new-project">Создать проект</a>
+<a class="push-button full-width">Подключить ГИС</a>
+<a class="push-button full-width">Собрать корпус</a>
+<a class="push-button full-width">Пригласить команду</a>
+<a class="push-button full-width">Выбрать агента</a>
 </div>
 </div>
-<div class="stack-8" data-variant="dummies">
-<h2 class="t-m b">Что такое ИИ-помощник</h2>
+<div class="vertical-stack-8" data-variant="dummies">
+<h2>Что такое ИИ-помощник</h2>
 <p>Это программа, которая читает ваши тексты и карты и отвечает на вопросы о них обычным языком. Она не знает вашу площадь заранее: всё, что она скажет, она берёт из документов, которые вы ей дали.</p>
-<h2 class="t-m b">Как он читает документы</h2>
+<h2>Как он читает документы</h2>
 <p>Отчёт разбирается на страницы, таблицы и рисунки, слои ГИС — на объекты с координатами. Из этого собирается корпус проекта. На вопрос агент находит подходящие фрагменты и составляет ответ из них, указывая, откуда что взято.</p>
-<h2 class="t-m b">Чем он помогает в геологии</h2>
+<h2>Чем он помогает в геологии</h2>
 <p>Быстро находит нужное в сотнях страниц, сводит данные из разных отчётов в одну таблицу, строит расчётную сетку и признаки для прогноза, готовит черновики разделов отчёта. Он не заменяет интерпретацию геолога: выводы проверяете вы.</p>
-<h2 class="t-m b">Как задавать вопросы</h2>
+<h2>Как задавать вопросы</h2>
 <p>Спрашивайте конкретно: площадь, слой, период, что именно нужно получить. Просите показать источник. Если ответ кажется неверным, уточните, какие документы использовать, и спросите снова.</p>
 </div>
-<div class="stack-8" data-variant="faq">
-<h2 class="t-m b">Инструкции</h2>
-<ul class="list plain"><li><div>Как начать работу с GEOcursor</div></li><li><div>Какие агенты доступны</div></li><li><div>Вопросы по методикам</div></li><li><div>Поиск научных материалов</div></li></ul>
+<div class="vertical-stack-8" data-variant="faq">
+<h2>Инструкции</h2>
+<ul class="bullet-list without-bullets"><li><div>Как начать работу с GEOcursor</div></li><li><div>Какие агенты доступны</div></li><li><div>Вопросы по методикам</div></li><li><div>Поиск научных материалов</div></li></ul>
 </div>
 </div>
 </div>
 <div data-block="chat" data-form="welcome">
 <div data-block="section" data-label="Welcome section" data-variants="empty:empty,faq:faq,legacy:legacy">
 <div data-variant="empty"></div>
-<div class="stack-8" data-variant="faq">
-<h2 class="t-m b">Инструкции</h2>
-<ul class="list plain"><li><div>Как начать работу с GEOcursor</div></li><li><div>Какие агенты доступны</div></li><li><div>Вопросы по методикам</div></li><li><div>Поиск научных материалов</div></li></ul>
+<div class="vertical-stack-8" data-variant="faq">
+<h2>Инструкции</h2>
+<ul class="bullet-list without-bullets"><li><div>Как начать работу с GEOcursor</div></li><li><div>Какие агенты доступны</div></li><li><div>Вопросы по методикам</div></li><li><div>Поиск научных материалов</div></li></ul>
 </div>
-<div class="stack-8" data-variant="legacy">
-<h2 class="t-m b">История диалогов</h2>
-<ul class="list plain">
-<li><div>Как начать работу с GEOcursor</div><div class="t-s sec">Общий диалог · 8 сообщений · Сегодня</div></li>
-<li><div>Какие агенты доступны</div><div class="t-s sec">Общий диалог · 5 сообщений · Сегодня</div></li>
-<li><div>Карта Верхне-Колпинской площади</div><div class="t-s sec">Верхне-Колпинская площадь · 11 сообщений · Сегодня</div></li>
-<li><div>Поиск научных материалов</div><div class="t-s sec">Общий диалог · 9 сообщений · Вчера</div></li>
-<li><div>Назначение ролей геоданным</div><div class="t-s sec">Верхне-Колпинская площадь · 7 сообщений · Вчера</div></li>
-<li><div>Обзор недавних документов</div><div class="t-s sec">Общий диалог · 6 сообщений · Вчера</div></li>
-<li><div>Проверка расчётной сетки</div><div class="t-s sec">Верхне-Колпинская площадь · 12 сообщений · 19.10.2026</div></li>
-<li><div>Материалы по Норильску</div><div class="t-s sec">Норильск · 8 сообщений · 17.10.2026</div></li>
-<li><div>Вопросы по методикам</div><div class="t-s sec">Общий диалог · 10 сообщений · 14.10.2026</div></li>
+<div class="vertical-stack-8" data-variant="legacy">
+<h2>История диалогов</h2>
+<ul class="bullet-list without-bullets">
+<li><div>Как начать работу с GEOcursor</div><div class="text-small text-secondary">Общий диалог · 8 сообщений · Сегодня</div></li>
+<li><div>Какие агенты доступны</div><div class="text-small text-secondary">Общий диалог · 5 сообщений · Сегодня</div></li>
+<li><div>Карта Верхне-Колпинской площади</div><div class="text-small text-secondary">Верхне-Колпинская площадь · 11 сообщений · Сегодня</div></li>
+<li><div>Поиск научных материалов</div><div class="text-small text-secondary">Общий диалог · 9 сообщений · Вчера</div></li>
+<li><div>Назначение ролей геоданным</div><div class="text-small text-secondary">Верхне-Колпинская площадь · 7 сообщений · Вчера</div></li>
+<li><div>Обзор недавних документов</div><div class="text-small text-secondary">Общий диалог · 6 сообщений · Вчера</div></li>
+<li><div>Проверка расчётной сетки</div><div class="text-small text-secondary">Верхне-Колпинская площадь · 12 сообщений · 19.10.2026</div></li>
+<li><div>Материалы по Норильску</div><div class="text-small text-secondary">Норильск · 8 сообщений · 17.10.2026</div></li>
+<li><div>Вопросы по методикам</div><div class="text-small text-secondary">Общий диалог · 10 сообщений · 14.10.2026</div></li>
 </ul>
 </div>
 </div>
 </div>
 </div></section>
-<section class="screen" id="main"><div class="cols">
+<section class="page-screen" id="main"><div class="three-columns">
 <div data-block="catalogue" data-state="none"></div>
-<div class="box bd-2s stack-16">
-<h1 class="t-l b">Сводка</h1>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<h1>Сводка</h1>
 <div data-block="section" data-label="Last 3 chats summaries">
-<div class="stack-8">
-<h2 class="t-m b">Обзор ваших последних чатов</h2>
-<ul class="list">
-<li><div>Слои геологической карты</div><div class="t-s sec">Верхне-Колпинская площадь · 11 сообщений · 21.10.2026</div><div class="t-s sec">Уточнили состав слоёв для карты: контур лицензии, разломы и рудные точки; договорились о порядке отрисовки и подписях масштаба.</div></li>
-<li><div>Атрибутивная структура геотизера</div><div class="t-s sec">Лекын-Тальбейская площадь · 8 сообщений · 20.10.2026</div><div class="t-s sec">Собрали перечень атрибутов паспорта объекта и источники для каждого; открытым остался формат выгрузки в таблицу.</div></li>
-<li><div>Что подарить геологу</div><div class="t-s sec">Общий диалог · 5 сообщений · 19.10.2026</div><div class="t-s sec">Обсудили варианты: полевой молоток, лупа с подсветкой и атлас минералов; остановились на лупе.</div></li>
+<div class="vertical-stack-8">
+<h2>Обзор ваших последних чатов</h2>
+<ul class="bullet-list">
+<li><div>Слои геологической карты</div><div class="text-small text-secondary">Верхне-Колпинская площадь · 11 сообщений · 21.10.2026</div><div class="text-small text-secondary">Уточнили состав слоёв для карты: контур лицензии, разломы и рудные точки; договорились о порядке отрисовки и подписях масштаба.</div></li>
+<li><div>Атрибутивная структура геотизера</div><div class="text-small text-secondary">Лекын-Тальбейская площадь · 8 сообщений · 20.10.2026</div><div class="text-small text-secondary">Собрали перечень атрибутов паспорта объекта и источники для каждого; открытым остался формат выгрузки в таблицу.</div></li>
+<li><div>Что подарить геологу</div><div class="text-small text-secondary">Общий диалог · 5 сообщений · 19.10.2026</div><div class="text-small text-secondary">Обсудили варианты: полевой молоток, лупа с подсветкой и атлас минералов; остановились на лупе.</div></li>
 </ul>
 </div>
 </div>
 <div data-block="section" data-label="Recent artifacts">
-<div class="stack-8">
-<h2 class="t-m b">Недавние артефакты</h2>
-<ul class="list">
-<li><div><a href="#project-geotiser">Геотизер объекта</a></div><div class="t-s sec"><span class="u">Лекын-Тальбейская площадь</span> заполненный паспорт объекта, атрибуты и источники</div></li>
-<li><div>Описание расчёта лицензии</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> геометрия, сетка и признаки</div></li>
-<li><div>Роли геологических слоёв</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> назначение и влияние на расчёт</div></li>
+<div class="vertical-stack-8">
+<h2>Недавние артефакты</h2>
+<ul class="bullet-list">
+<li><div><a href="#project-geotiser">Геотизер объекта</a></div><div class="text-small text-secondary"><span class="text-underline">Лекын-Тальбейская площадь</span> заполненный паспорт объекта, атрибуты и источники</div></li>
+<li><div>Описание расчёта лицензии</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> геометрия, сетка и признаки</div></li>
+<li><div>Роли геологических слоёв</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> назначение и влияние на расчёт</div></li>
 </ul>
-<div class="row-8 end"><a class="btn small">Развернуть</a></div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Развернуть</a></div>
 </div>
 </div>
 <div data-block="section" data-label="Teams activity over related projects">
-<div class="stack-8">
-<h2 class="t-m b">Командная лента</h2>
-<ul class="list">
-<li><div>Комплексный отчёт о геологическом строении и перспективности Верхне-Колпинской площади</div><div class="t-s sec">Александр Иванов · Геолог-аналитик</div><div class="t-s sec">подготовил геологическую часть комплексного отчёта, описал типы пород, рудные проявления и выводы по перспективным зонам</div></li>
-<li><div>Интегрированная карта геолого-геофизических факторов Верхне-Колпинской площади</div><div class="t-s sec">Мария Петрова · ГИС-аналитик</div><div class="t-s sec">загрузила контур, разломы и рудные точки в ГИС, оформила сводную карту геолого-геофизических факторов</div></li>
-<li><div>Отчёт по магнитной и геохимической интерпретации участка</div><div class="t-s sec">Дмитрий Смирнов · Геофизик</div><div class="t-s sec">подготовил карты магнитных аномалий и раздел интерпретации геофизических материалов</div></li>
+<div class="vertical-stack-8">
+<h2>Командная лента</h2>
+<ul class="bullet-list">
+<li><div>Комплексный отчёт о геологическом строении и перспективности Верхне-Колпинской площади</div><div class="text-small text-secondary">Александр Иванов · Геолог-аналитик</div><div class="text-small text-secondary">подготовил геологическую часть комплексного отчёта, описал типы пород, рудные проявления и выводы по перспективным зонам</div></li>
+<li><div>Интегрированная карта геолого-геофизических факторов Верхне-Колпинской площади</div><div class="text-small text-secondary">Мария Петрова · ГИС-аналитик</div><div class="text-small text-secondary">загрузила контур, разломы и рудные точки в ГИС, оформила сводную карту геолого-геофизических факторов</div></li>
+<li><div>Отчёт по магнитной и геохимической интерпретации участка</div><div class="text-small text-secondary">Дмитрий Смирнов · Геофизик</div><div class="text-small text-secondary">подготовил карты магнитных аномалий и раздел интерпретации геофизических материалов</div></li>
 </ul>
-<div class="row-8 end"><a class="btn small">Развернуть</a></div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Развернуть</a></div>
 </div>
 </div>
 </div>
 <div data-block="chat" data-form="main"></div>
 </div></section>
-<section class="screen" id="project"><div class="cols">
+<section class="page-screen" id="project"><div class="three-columns">
 <div data-block="catalogue" data-state="selected"></div>
-<div class="box bd-2s stack-16">
+<div class="padded-box border-thick-solid vertical-stack-16">
 <div data-block="project-head" data-tab="overview"></div>
 <div data-block="section" data-label="AI summary" data-variants="структура:structured,свободное:free">
-<div class="stack-8" data-variant="structured">
-<p><span class="b">Текущий этап: интерпретация результатов и подготовка итогового комплекта материалов.</span> Сбор и первичная обработка исходных геоданных завершены: собран 21 пространственный слой, подготовлены геологическая основа, контур лицензии площадью 33,1 км² и данные магнитной съёмки и опробования. Построена расчётная сетка из 1 140 ячеек с шагом 250 м; сформировано 206 пространственных признаков для каждой ячейки.</p>
-<p><span class="b">Уже подготовлено:</span> сводная геолого-геофизическая карта, таблица расчётных признаков, картографический альбом и комплексный геологический отчёт. В работе — карта перспективных зон минерализации, интерпретация магнитных аномалий и анализ устойчивости прогнозной модели.</p>
-<p><span class="b">Следующий этап:</span> экспертная проверка выделенных зон, согласование интерпретации и выпуск окончательной версии отчёта с картами и таблицами.</p>
+<div class="vertical-stack-8" data-variant="structured">
+<p><span class="weight-bold">Текущий этап: интерпретация результатов и подготовка итогового комплекта материалов.</span> Сбор и первичная обработка исходных геоданных завершены: собран 21 пространственный слой, подготовлены геологическая основа, контур лицензии площадью 33,1 км² и данные магнитной съёмки и опробования. Построена расчётная сетка из 1 140 ячеек с шагом 250 м; сформировано 206 пространственных признаков для каждой ячейки.</p>
+<p><span class="weight-bold">Уже подготовлено:</span> сводная геолого-геофизическая карта, таблица расчётных признаков, картографический альбом и комплексный геологический отчёт. В работе — карта перспективных зон минерализации, интерпретация магнитных аномалий и анализ устойчивости прогнозной модели.</p>
+<p><span class="weight-bold">Следующий этап:</span> экспертная проверка выделенных зон, согласование интерпретации и выпуск окончательной версии отчёта с картами и таблицами.</p>
 </div>
-<div class="stack-8" data-variant="free">
+<div class="vertical-stack-8" data-variant="free">
 <p>Верхне-Колпинская площадь находится на этапе интерпретации. Исходные геоданные собраны и обработаны: 21 пространственный слой, геологическая основа, контур лицензии площадью 33,1 км², данные магнитной съёмки и опробования. Расчётная сетка построена: 1 140 ячеек с шагом 250 м, по 206 пространственных признаков на ячейку. Готовы сводная геолого-геофизическая карта, таблица расчётных признаков, картографический альбом и комплексный геологический отчёт. В работе находятся карта перспективных зон минерализации, интерпретация магнитных аномалий и анализ устойчивости прогнозной модели.</p>
 </div>
 </div>
 <div data-block="section" data-label="Адаптивный корпус">
-<div class="stack-8">
-<h2 class="t-m b">Расчётные документы (18)</h2>
-<div class="tiles">
+<div class="vertical-stack-8">
+<h2>Расчётные документы (18)</h2>
+<div class="tiles-grid">
 <div data-block="corpustile" data-name="Комплексный отчёт о геологическом строении и перспективности Верхне-Колпинской площади.pdf" data-fmt="PDF" data-pct="92" data-date="21.10.2026" data-owner="Александр Иванов"></div>
 <div data-block="corpustile" data-name="Интегрированная карта геолого-геофизических факторов.png" data-fmt="PNG" data-pct="100" data-date="19.10.2026" data-owner="Мария Петрова"></div>
 <div data-block="corpustile" data-name="Сводная ведомость пространственных признаков и интерпретаций.xlsx" data-fmt="XLS" data-pct="76" data-date="18.10.2026" data-owner="Анна Морозова"></div>
@@ -162,67 +163,67 @@
 <div data-block="corpustile" data-name="База геохимических проб и рудопроявлений.csv" data-fmt="CSV" data-pct="100" data-date="14.10.2026" data-owner="Николай Орлов"></div>
 <div data-block="corpustile" data-name="ArcGIS Enterprise, gis-kola-02" data-fmt="GIS" data-pct="100" data-date="21.10.2026" data-owner="Мария Петрова"></div>
 </div>
-<div class="row-8 end"><a class="btn small">Редактировать</a></div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Редактировать</a></div>
 </div>
 </div>
 <div data-block="section" data-label="Команда" data-variants="участники:members,хронология:chrono">
-<div class="stack-8" data-variant="members">
-<h2 class="t-m b">Команда</h2>
-<ul class="list">
-<li><div>Екатерина Волкова</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> Загрузила и систематизировала 21 пространственный слой, подготовила каталог исходных материалов и таблицу соответствия семи предметным ролям</div></li>
-<li><div>Александр Иванов</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> Построил расчётную сетку 38 × 30, сформировал таблицу из 206 признаков на ячейку и подготовил раздел отчёта о методике прогнозирования</div></li>
-<li><div>Мария Петрова</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> Собрала ГИС-проект участка, настроила отображение геологии, лицензионного контура и разломов, выпустила обзорную карту и листы приложений</div></li>
-<li><div>Дмитрий Смирнов</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> Подготовил карту магнитных аномалий, выделил характерные зоны и оформил геофизический раздел аналитического отчёта</div></li>
+<div class="vertical-stack-8" data-variant="members">
+<h2>Команда</h2>
+<ul class="bullet-list">
+<li><div>Екатерина Волкова</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> Загрузила и систематизировала 21 пространственный слой, подготовила каталог исходных материалов и таблицу соответствия семи предметным ролям</div></li>
+<li><div>Александр Иванов</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> Построил расчётную сетку 38 × 30, сформировал таблицу из 206 признаков на ячейку и подготовил раздел отчёта о методике прогнозирования</div></li>
+<li><div>Мария Петрова</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> Собрала ГИС-проект участка, настроила отображение геологии, лицензионного контура и разломов, выпустила обзорную карту и листы приложений</div></li>
+<li><div>Дмитрий Смирнов</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> Подготовил карту магнитных аномалий, выделил характерные зоны и оформил геофизический раздел аналитического отчёта</div></li>
 </ul>
 </div>
-<div class="stack-8" data-variant="chrono">
-<h2 class="t-m b">Последняя командная активность</h2>
-<ul class="list">
-<li><div>Верхне-Колпинская площадь · 21.10.2026</div><div class="t-s sec">Николай Орлов · выпустил карту прогнозных участков и отчёт о результатах моделирования, включая ограничения и рекомендации по проверке</div></li>
-<li><div>Верхне-Колпинская площадь · 20.10.2026</div><div class="t-s sec">Анна Морозова · подготовила структурно-геологическую схему с разломами и рудопроявлениями; оформила пояснительную записку</div></li>
-<li><div>Верхне-Колпинская площадь · 18.10.2026</div><div class="t-s sec">Дмитрий Смирнов · подготовил карту магнитных аномалий, выделил характерные зоны и оформил геофизический раздел аналитического отчёта</div></li>
-<li><div>Верхне-Колпинская площадь · 16.10.2026</div><div class="t-s sec">Мария Петрова · собрала ГИС-проект участка, настроила отображение геологии, лицензионного контура и разломов, выпустила обзорную карту и листы приложений</div></li>
+<div class="vertical-stack-8" data-variant="chrono">
+<h2>Последняя командная активность</h2>
+<ul class="bullet-list">
+<li><div>Верхне-Колпинская площадь · 21.10.2026</div><div class="text-small text-secondary">Николай Орлов · выпустил карту прогнозных участков и отчёт о результатах моделирования, включая ограничения и рекомендации по проверке</div></li>
+<li><div>Верхне-Колпинская площадь · 20.10.2026</div><div class="text-small text-secondary">Анна Морозова · подготовила структурно-геологическую схему с разломами и рудопроявлениями; оформила пояснительную записку</div></li>
+<li><div>Верхне-Колпинская площадь · 18.10.2026</div><div class="text-small text-secondary">Дмитрий Смирнов · подготовил карту магнитных аномалий, выделил характерные зоны и оформил геофизический раздел аналитического отчёта</div></li>
+<li><div>Верхне-Колпинская площадь · 16.10.2026</div><div class="text-small text-secondary">Мария Петрова · собрала ГИС-проект участка, настроила отображение геологии, лицензионного контура и разломов, выпустила обзорную карту и листы приложений</div></li>
 </ul>
 </div>
-<div class="row-8 end"><a class="btn small">Развернуть</a></div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Развернуть</a></div>
 </div>
 <div data-block="section" data-label="Все артефакты">
-<div class="stack-8">
-<h2 class="t-m b">Все артефакты</h2>
-<ul class="list">
-<li><div>Карта перспективных зон минерализации — рабочая версия.tif</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> результат прогнозной интерпретации · на рассмотрении</div></li>
-<li><div>Отчёт по магнитной съёмке и интерпретации аномалий.pdf</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> тематический геофизический отчёт · в работе</div></li>
-<li><div>База геохимических проб и рудопроявлений.csv</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> таблица первичных точек и наблюдений</div></li>
-<li><div>Структурно-геологическая схема участка.gpkg</div><div class="t-s sec"><span class="u">Верхне-Колпинская площадь</span> пространственные объекты и разрывные нарушения</div></li>
+<div class="vertical-stack-8">
+<h2>Все артефакты</h2>
+<ul class="bullet-list">
+<li><div>Карта перспективных зон минерализации — рабочая версия.tif</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> результат прогнозной интерпретации · на рассмотрении</div></li>
+<li><div>Отчёт по магнитной съёмке и интерпретации аномалий.pdf</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> тематический геофизический отчёт · в работе</div></li>
+<li><div>База геохимических проб и рудопроявлений.csv</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> таблица первичных точек и наблюдений</div></li>
+<li><div>Структурно-геологическая схема участка.gpkg</div><div class="text-small text-secondary"><span class="text-underline">Верхне-Колпинская площадь</span> пространственные объекты и разрывные нарушения</div></li>
 </ul>
-<div class="row-8 end"><a class="btn small">Развернуть</a></div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Развернуть</a></div>
 </div>
 </div>
 </div>
 <div data-block="chat" data-form="main"></div>
 </div></section>
-<section class="screen" id="project-geotiser"><div class="cols">
+<section class="page-screen" id="project-geotiser"><div class="three-columns">
 <div data-block="catalogue" data-state="selected"></div>
-<div class="box bd-2s stack-16">
+<div class="padded-box border-thick-solid vertical-stack-16">
 <div data-block="project-head" data-tab="geotiser"></div>
-<div class="row-8"><span class="btn small sel">Обзор</span><span class="btn small">Атрибуты</span><span class="btn small">Результаты</span><span class="btn small">Артефакты</span><span class="btn small">Редактировать</span></div>
+<div class="horizontal-row-8"><span class="push-button size-small selected-state">Обзор</span><span class="push-button size-small">Атрибуты</span><span class="push-button size-small">Результаты</span><span class="push-button size-small">Артефакты</span><span class="push-button size-small">Редактировать</span></div>
 <div data-block="panel" data-title="Заполнение геотизера">
-<div class="row-8 between"><span class="sec">Статус</span><span class="b">Подготовка геологического паспорта</span></div>
-<div class="row-8 between"><span class="sec">Атрибутивная таблица</span><span class="b">Геология · геофизика · опробование</span></div>
-<div class="row-8 between"><span class="sec">Результаты</span><span class="b">Таблицы · карты · отчёт</span></div>
-<div class="row-8"><span class="btn small">Начать</span><span class="t-s sec">-></span><span class="btn small">Проверить</span><span class="t-s sec">-></span><span class="btn small">Собрать</span><span class="t-s sec">-></span><span class="btn small">Экспорт</span></div>
-<div class="row-8"><span class="btn small">Запустить</span><span class="btn small">Следующий этап</span><span class="btn small">Сбросить</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Статус</span><span class="weight-bold">Подготовка геологического паспорта</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Атрибутивная таблица</span><span class="weight-bold">Геология · геофизика · опробование</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Результаты</span><span class="weight-bold">Таблицы · карты · отчёт</span></div>
+<div class="horizontal-row-8"><span class="push-button size-small">Начать</span><span class="text-small text-secondary">-></span><span class="push-button size-small">Проверить</span><span class="text-small text-secondary">-></span><span class="push-button size-small">Собрать</span><span class="text-small text-secondary">-></span><span class="push-button size-small">Экспорт</span></div>
+<div class="horizontal-row-8"><span class="push-button size-small">Запустить</span><span class="push-button size-small">Следующий этап</span><span class="push-button size-small">Сбросить</span></div>
 </div>
 <div data-block="panel" data-title="Основные показатели">
-<div class="stack-8">
-<div class="row-8 between"><span class="sec">Площадь участка</span><span class="b">33,1 км²</span></div>
-<div class="row-8 between"><span class="sec">Геологических слоёв</span><span class="b">21</span></div>
-<div class="row-8 between"><span class="sec">Предметных ролей</span><span class="b">7</span></div>
-<div class="row-8 between"><span class="sec">Расчётных ячеек</span><span class="b">1 140</span></div>
+<div class="vertical-stack-8">
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Площадь участка</span><span class="weight-bold">33,1 км²</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Геологических слоёв</span><span class="weight-bold">21</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Предметных ролей</span><span class="weight-bold">7</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Расчётных ячеек</span><span class="weight-bold">1 140</span></div>
 </div>
 </div>
 <div data-block="panel" data-title="Атрибуты геотизера">
-<table class="table"><thead><tr><th>Раздел</th><th>Атрибут</th><th>Значение</th></tr></thead><tbody>
+<table class="data-table"><thead><tr><th>Раздел</th><th>Атрибут</th><th>Значение</th></tr></thead><tbody>
 <tr><td>Лицензионный блок</td><td>Название участка</td><td>Верхне-Колпинская площадь</td></tr>
 <tr><td>Лицензионный блок</td><td>Площадь лицензионного контура</td><td>33,1 км²</td></tr>
 <tr><td>Исходные данные</td><td>Пространственные слои</td><td>21</td></tr>
@@ -237,151 +238,121 @@
 </tbody></table>
 </div>
 <div data-block="panel" data-title="Материалы и результаты">
-<ul class="list">
-<li><div>Комплексный отчёт о геологическом строении и перспективности участка.pdf</div><div class="t-s sec">геологическое строение, изученность и перспективные зоны</div></li>
-<li><div>Сводная ведомость пространственных признаков.xlsx</div><div class="t-s sec">характеристики расчётных ячеек</div></li>
-<li><div>Интегрированная карта геолого-геофизических факторов.png</div><div class="t-s sec">пространственное представление участка</div></li>
-<li><div>Карта перспективных зон минерализации.tif</div><div class="t-s sec">результат прогнозной интерпретации</div></li>
-<li><div>Картографический альбом приложений.pdf</div><div class="t-s sec">комплект геологических карт</div></li>
+<ul class="bullet-list">
+<li><div>Комплексный отчёт о геологическом строении и перспективности участка.pdf</div><div class="text-small text-secondary">геологическое строение, изученность и перспективные зоны</div></li>
+<li><div>Сводная ведомость пространственных признаков.xlsx</div><div class="text-small text-secondary">характеристики расчётных ячеек</div></li>
+<li><div>Интегрированная карта геолого-геофизических факторов.png</div><div class="text-small text-secondary">пространственное представление участка</div></li>
+<li><div>Карта перспективных зон минерализации.tif</div><div class="text-small text-secondary">результат прогнозной интерпретации</div></li>
+<li><div>Картографический альбом приложений.pdf</div><div class="text-small text-secondary">комплект геологических карт</div></li>
 </ul>
 </div>
 </div>
 <div data-block="chat" data-form="classic">
 
-<div><div class="t-s sec">Вы · 09:40</div><div>Заполни паспорт объекта по Верхне-Колпинской площади: лицензионный блок, исходные данные и геологическое строение.</div></div>
-<div><div class="t-s sec">Геолог · 09:41</div><div class="stack-8"><p>Собрал паспорт по трём блокам. Лицензионный блок: Верхне-Колпинская площадь, контур 33,1 км², ориентировка северо-восточная, вершины взяты из слоя контура лицензии. Исходные данные: 21 пространственный слой, из них 7 с назначенными ролями — геологическая основа, разломы, рудные точки, магнитная съёмка, литохимическое опробование, расчётная сетка и ДЗЗ.</p><p>Геологическое строение: 12 полигонов основы масштаба 1:10 000, преобладают вулканогенно-осадочные толщи, в центральной части — интрузивное тело. Четырнадцать слоёв пока без ролей; назначить их можно на вкладке редактирования.</p></div></div>
-<div><div class="t-s sec">Вы · 09:43</div><div>Откуда взято число разрывных нарушений?</div></div>
-<div><div class="t-s sec">Геолог · 09:43</div><div class="stack-8"><p>Из слоя «Разломы и структурные линии» (shp). В исходном файле 19 полилиний, но пять из них — дубли на стыках листов съёмки: совпадают по геометрии с точностью до 2 м и имеют одинаковые атрибуты. После объединения осталось 14 линейных объектов общей длиной 46,8 км.</p><p>По простиранию они делятся так: 8 северо-восточных, 4 субширотных, 2 северо-западных. Если нужно, могу показать таблицу с длинами и азимутами по каждому нарушению.</p></div></div>
-<div><div class="t-s sec">Вы · 09:47</div><div>Добавь в раздел «Геофизика» магнитную съёмку с количеством измерений.</div></div>
-<div><div class="t-s sec">Геолог · 09:47</div><div class="stack-8"><p>Добавил. Источник — каталог геофизических измерений (csv), 8 381 точка наземной магнитной съёмки. Сеть 100 × 100 м по профилям 1–5, профили ориентированы вкрест основного северо-восточного простирания структур. Диапазон поля ΔT от −412 до +1 236 нТл, медиана 87 нТл.</p><ul class="list"><li><div>Положительные аномалии</div><div class="t-s sec">три зоны в центральной части, совпадают с интрузивным телом</div></li><li><div>Пропуски в сети</div><div class="t-s sec">два участка на северо-западе, болото; измерения отсутствуют</div></li></ul><p>В паспорт записал количество измерений, сеть и дату съёмки — июль 2025.</p></div></div>
-<div><div class="t-s sec">Вы · 09:52</div><div>В опробовании 63 рудные точки — это все записи или только с подтверждённой минерализацией?</div></div>
-<div><div class="t-s sec">Геолог · 09:52</div><div class="stack-8"><p>Все записи каталога рудопроявлений и точек наблюдения. Подтверждённая минерализация есть у 41 точки: по ним имеются результаты анализов с содержаниями выше бортовых. Ещё 17 — визуальные наблюдения без анализов, 5 — точки из архивных отчётов без координатной привязки, их я поставил по описанию с точностью около 200 м.</p><p>Предлагаю в паспорте указать 41 как основную цифру, а 63 — как общий объём каталога, чтобы не завышать изученность.</p></div></div>
-<div><div class="t-s sec">Вы · 09:58</div><div>Зафиксируй сетку 38 × 30 и 206 признаков в блоке «Моделирование» и отметь статус паспорта как «подготовка».</div></div>
-<div><div class="t-s sec">Геолог · 09:58</div><div class="stack-8"><p>Записал. Расчётная сетка 38 × 30 ячеек с шагом 250 м, всего 1 140 ячеек, из них 529 полностью внутри контура лицензии, 96 на границе. Признаков на ячейку — 206: 48 геологических, 62 структурных, 71 геофизический, 25 по опробованию.</p><p>Статус паспорта — «подготовка геологического паспорта». Незаполненными остаются поля «Система координат» и «Ответственный за проверку»; как только их заполните, статус можно переводить в «проверка».</p></div></div>
+<div><div class="text-small text-secondary">Вы · 09:40</div><div>Заполни паспорт объекта по Верхне-Колпинской площади: лицензионный блок, исходные данные и геологическое строение.</div></div>
+<div><div class="text-small text-secondary">Геолог · 09:41</div><div class="vertical-stack-8"><p>Собрал паспорт по трём блокам. Лицензионный блок: Верхне-Колпинская площадь, контур 33,1 км², ориентировка северо-восточная, вершины взяты из слоя контура лицензии. Исходные данные: 21 пространственный слой, из них 7 с назначенными ролями — геологическая основа, разломы, рудные точки, магнитная съёмка, литохимическое опробование, расчётная сетка и ДЗЗ.</p><p>Геологическое строение: 12 полигонов основы масштаба 1:10 000, преобладают вулканогенно-осадочные толщи, в центральной части — интрузивное тело. Четырнадцать слоёв пока без ролей; назначить их можно на вкладке редактирования.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 09:43</div><div>Откуда взято число разрывных нарушений?</div></div>
+<div><div class="text-small text-secondary">Геолог · 09:43</div><div class="vertical-stack-8"><p>Из слоя «Разломы и структурные линии» (shp). В исходном файле 19 полилиний, но пять из них — дубли на стыках листов съёмки: совпадают по геометрии с точностью до 2 м и имеют одинаковые атрибуты. После объединения осталось 14 линейных объектов общей длиной 46,8 км.</p><p>По простиранию они делятся так: 8 северо-восточных, 4 субширотных, 2 северо-западных. Если нужно, могу показать таблицу с длинами и азимутами по каждому нарушению.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 09:47</div><div>Добавь в раздел «Геофизика» магнитную съёмку с количеством измерений.</div></div>
+<div><div class="text-small text-secondary">Геолог · 09:47</div><div class="vertical-stack-8"><p>Добавил. Источник — каталог геофизических измерений (csv), 8 381 точка наземной магнитной съёмки. Сеть 100 × 100 м по профилям 1–5, профили ориентированы вкрест основного северо-восточного простирания структур. Диапазон поля ΔT от −412 до +1 236 нТл, медиана 87 нТл.</p><ul class="bullet-list"><li><div>Положительные аномалии</div><div class="text-small text-secondary">три зоны в центральной части, совпадают с интрузивным телом</div></li><li><div>Пропуски в сети</div><div class="text-small text-secondary">два участка на северо-западе, болото; измерения отсутствуют</div></li></ul><p>В паспорт записал количество измерений, сеть и дату съёмки — июль 2025.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 09:52</div><div>В опробовании 63 рудные точки — это все записи или только с подтверждённой минерализацией?</div></div>
+<div><div class="text-small text-secondary">Геолог · 09:52</div><div class="vertical-stack-8"><p>Все записи каталога рудопроявлений и точек наблюдения. Подтверждённая минерализация есть у 41 точки: по ним имеются результаты анализов с содержаниями выше бортовых. Ещё 17 — визуальные наблюдения без анализов, 5 — точки из архивных отчётов без координатной привязки, их я поставил по описанию с точностью около 200 м.</p><p>Предлагаю в паспорте указать 41 как основную цифру, а 63 — как общий объём каталога, чтобы не завышать изученность.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 09:58</div><div>Зафиксируй сетку 38 × 30 и 206 признаков в блоке «Моделирование» и отметь статус паспорта как «подготовка».</div></div>
+<div><div class="text-small text-secondary">Геолог · 09:58</div><div class="vertical-stack-8"><p>Записал. Расчётная сетка 38 × 30 ячеек с шагом 250 м, всего 1 140 ячеек, из них 529 полностью внутри контура лицензии, 96 на границе. Признаков на ячейку — 206: 48 геологических, 62 структурных, 71 геофизический, 25 по опробованию.</p><p>Статус паспорта — «подготовка геологического паспорта». Незаполненными остаются поля «Система координат» и «Ответственный за проверку»; как только их заполните, статус можно переводить в «проверка».</p></div></div>
 </div>
 </div></section>
-<section class="screen" id="project-map"><div class="cols collapsed">
+<section class="page-screen" id="project-map"><div class="three-columns catalogue-collapsed">
 <div data-block="catalogue" data-state="collapsed"></div>
-<div class="box bd-2s stack-16">
+<div class="padded-box border-thick-solid vertical-stack-16">
 <div data-block="project-head" data-tab="map"></div>
 <p>Выберите тип карты и включите нужные слои для анализа участка.</p>
 <div data-block="panel" data-title="Отображение карты">
-<div class="row-8" data-map-modes><a class="btn small sel" href="#" data-action="map:source">Исходные данные</a><a class="btn small" href="#" data-action="map:model">Моделирование</a><a class="btn small" href="#" data-action="map:combined">Совмещённая карта</a></div>
+<div class="horizontal-row-8" data-map-modes><a class="push-button size-small selected-state" href="#" data-action="map:source">Исходные данные</a><a class="push-button size-small" href="#" data-action="map:model">Моделирование</a><a class="push-button size-small" href="#" data-action="map:combined">Совмещённая карта</a></div>
 <div data-map></div>
-<div class="t-s sec" id="map-feature">Нажмите на линию, точку или контур на схеме, чтобы просмотреть описание элемента.</div>
+<div class="text-small text-secondary" id="map-feature">Нажмите на линию, точку или контур на схеме, чтобы просмотреть описание элемента.</div>
 </div>
 <div data-block="panel" data-title="Дерево слоёв">
-<div class="stack-8" data-map-layers>
-<div class="row-8"><a class="btn small icon sel" href="#" data-action="layer:licence"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Контур лицензии</span></div>
-<div class="row-8"><a class="btn small icon sel" href="#" data-action="layer:geology"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Геологическая основа</span></div>
-<div class="row-8"><a class="btn small icon sel" href="#" data-action="layer:faults"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Разломы</span></div>
-<div class="row-8"><a class="btn small icon" href="#" data-action="layer:magnetism"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Магнитные точки</span></div>
-<div class="row-8"><a class="btn small icon sel" href="#" data-action="layer:ore"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Рудные точки</span></div>
-<div class="row-8"><a class="btn small icon" href="#" data-action="layer:model"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Модельное наложение</span></div>
+<div class="vertical-stack-8" data-map-layers>
+<div class="horizontal-row-8"><a class="push-button size-small icon-button selected-state" href="#" data-action="layer:licence"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Контур лицензии</span></div>
+<div class="horizontal-row-8"><a class="push-button size-small icon-button selected-state" href="#" data-action="layer:geology"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Геологическая основа</span></div>
+<div class="horizontal-row-8"><a class="push-button size-small icon-button selected-state" href="#" data-action="layer:faults"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Разломы</span></div>
+<div class="horizontal-row-8"><a class="push-button size-small icon-button" href="#" data-action="layer:magnetism"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Магнитные точки</span></div>
+<div class="horizontal-row-8"><a class="push-button size-small icon-button selected-state" href="#" data-action="layer:ore"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Рудные точки</span></div>
+<div class="horizontal-row-8"><a class="push-button size-small icon-button" href="#" data-action="layer:model"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Модельное наложение</span></div>
 </div>
 </div>
 </div>
 <div data-block="chat" data-form="classic">
 
-<div><div class="t-s sec">Вы · 11:05</div><div>Покажи на схеме контур лицензии и разломы, остальные слои пока выключи.</div></div>
-<div><div class="t-s sec">Геолог · 11:05</div><div class="stack-8"><p>Включил контур лицензии и разрывные нарушения, остальные слои скрыл: геологическую основу, магнитные точки, рудные точки и модельное наложение. Контур показан сплошной линией, разломы — тонкими линиями; подписи пока не выводил, чтобы не перегружать схему.</p><p>Если удобнее, могу оставить геологическую основу полупрозрачной подложкой — на ней лучше читается, какие разломы идут по контактам толщ.</p></div></div>
-<div><div class="t-s sec">Вы · 11:08</div><div>Сколько разломов пересекают контур?</div></div>
-<div><div class="t-s sec">Геолог · 11:08</div><div class="stack-8"><p>Три из четырнадцати. Два северо-восточного простирания пересекают контур с юго-запада на северо-восток и выходят за его пределы с обеих сторон; их протяжённость внутри контура 6,4 и 5,1 км. Третий — субширотный, в южной части площади, входит в контур с запада и затухает примерно в 1,2 км от восточной границы.</p><p>Ещё четыре нарушения касаются контура в пределах 300 м, но формально его не пересекают. Остальные семь лежат целиком снаружи.</p></div></div>
-<div><div class="t-s sec">Вы · 11:12</div><div>Добавь рудные точки и скажи, какие из них лежат вблизи разломов.</div></div>
-<div><div class="t-s sec">Геолог · 11:12</div><div class="stack-8"><p>Рудные точки включены, на схеме их три — это точки с подтверждённой минерализацией внутри контура. В 250-метровой буферной зоне разломов лежат две из них:</p><ul class="list"><li><div>Точка 7</div><div class="t-s sec">в 90 м от северо-восточного нарушения, медно-порфировая минерализация</div></li><li><div>Точка 12</div><div class="t-s sec">в 210 м от того же нарушения, сульфидная вкрапленность</div></li></ul><p>Третья точка, 19, находится в 600 м к востоку от ближайшего нарушения и, судя по описанию, связана с контактом интрузии, а не с разломом.</p></div></div>
-<div><div class="t-s sec">Вы · 11:15</div><div>Включи магнитную съёмку, нужно посмотреть распределение точек.</div></div>
-<div><div class="t-s sec">Геолог · 11:15</div><div class="stack-8"><p>Включил. На схеме 8 381 точка по профилям 1–5 показана условно — каждая сорок пятая, иначе слой закрывает всё остальное. Сеть плотнее в центральной части контура, где профили сгущены до 50 м над предполагаемым интрузивным телом.</p><p>Видны два разрыва сети на северо-западе — заболоченный участок без измерений. Положительные аномалии вытянуты вдоль северо-восточных разломов и совпадают с точками 7 и 12.</p></div></div>
-<div><div class="t-s sec">Вы · 11:20</div><div>Переключи на совмещённую карту с модельным наложением.</div></div>
-<div><div class="t-s sec">Геолог · 11:20</div><div class="stack-8"><p>Режим «Совмещённая карта» включён. Поверх геологических слоёв показаны ячейки модели с рангом выше 0,8 — их четыре, все в центральной зоне, вдоль северо-восточного нарушения. Две из них содержат рудные точки 7 и 12, две соседние — без точек, но с положительной магнитной аномалией и теми же признаками по геологии.</p><p>Это предварительный результат на 206 признаках без проверки устойчивости; после анализа устойчивости модели набор ячеек может измениться.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 11:05</div><div>Покажи на схеме контур лицензии и разломы, остальные слои пока выключи.</div></div>
+<div><div class="text-small text-secondary">Геолог · 11:05</div><div class="vertical-stack-8"><p>Включил контур лицензии и разрывные нарушения, остальные слои скрыл: геологическую основу, магнитные точки, рудные точки и модельное наложение. Контур показан сплошной линией, разломы — тонкими линиями; подписи пока не выводил, чтобы не перегружать схему.</p><p>Если удобнее, могу оставить геологическую основу полупрозрачной подложкой — на ней лучше читается, какие разломы идут по контактам толщ.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 11:08</div><div>Сколько разломов пересекают контур?</div></div>
+<div><div class="text-small text-secondary">Геолог · 11:08</div><div class="vertical-stack-8"><p>Три из четырнадцати. Два северо-восточного простирания пересекают контур с юго-запада на северо-восток и выходят за его пределы с обеих сторон; их протяжённость внутри контура 6,4 и 5,1 км. Третий — субширотный, в южной части площади, входит в контур с запада и затухает примерно в 1,2 км от восточной границы.</p><p>Ещё четыре нарушения касаются контура в пределах 300 м, но формально его не пересекают. Остальные семь лежат целиком снаружи.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 11:12</div><div>Добавь рудные точки и скажи, какие из них лежат вблизи разломов.</div></div>
+<div><div class="text-small text-secondary">Геолог · 11:12</div><div class="vertical-stack-8"><p>Рудные точки включены, на схеме их три — это точки с подтверждённой минерализацией внутри контура. В 250-метровой буферной зоне разломов лежат две из них:</p><ul class="bullet-list"><li><div>Точка 7</div><div class="text-small text-secondary">в 90 м от северо-восточного нарушения, медно-порфировая минерализация</div></li><li><div>Точка 12</div><div class="text-small text-secondary">в 210 м от того же нарушения, сульфидная вкрапленность</div></li></ul><p>Третья точка, 19, находится в 600 м к востоку от ближайшего нарушения и, судя по описанию, связана с контактом интрузии, а не с разломом.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 11:15</div><div>Включи магнитную съёмку, нужно посмотреть распределение точек.</div></div>
+<div><div class="text-small text-secondary">Геолог · 11:15</div><div class="vertical-stack-8"><p>Включил. На схеме 8 381 точка по профилям 1–5 показана условно — каждая сорок пятая, иначе слой закрывает всё остальное. Сеть плотнее в центральной части контура, где профили сгущены до 50 м над предполагаемым интрузивным телом.</p><p>Видны два разрыва сети на северо-западе — заболоченный участок без измерений. Положительные аномалии вытянуты вдоль северо-восточных разломов и совпадают с точками 7 и 12.</p></div></div>
+<div><div class="text-small text-secondary">Вы · 11:20</div><div>Переключи на совмещённую карту с модельным наложением.</div></div>
+<div><div class="text-small text-secondary">Геолог · 11:20</div><div class="vertical-stack-8"><p>Режим «Совмещённая карта» включён. Поверх геологических слоёв показаны ячейки модели с рангом выше 0,8 — их четыре, все в центральной зоне, вдоль северо-восточного нарушения. Две из них содержат рудные точки 7 и 12, две соседние — без точек, но с положительной магнитной аномалией и теми же признаками по геологии.</p><p>Это предварительный результат на 206 признаках без проверки устойчивости; после анализа устойчивости модели набор ячеек может измениться.</p></div></div>
 </div>
 </div></section>
-<section class="screen" id="project-edit"><div class="cols">
-<div data-block="catalogue" data-state="selected"></div>
-<div class="box bd-2s stack-16">
-<div data-block="project-head" data-tab="edit"></div>
-<p>Основные сведения, источники данных и настройки проекта.</p>
-<div data-block="panel" data-title="Паспорт проекта">
-<div class="row-8 between"><span class="sec">Название</span><span class="b">Верхне-Колпинская площадь</span></div>
-<div class="row-8 between"><span class="sec">Цель</span><span class="b">Оценка перспективности по пространственным признакам</span></div>
-<div class="row-8 between"><span class="sec">Геоконтекст</span><span class="b">Контур лицензии · 33,1 км²</span></div>
-<div class="row-8 between"><span class="sec">Система координат</span><span class="b">Подлежит проверке перед вычислениями</span></div>
-</div>
-<div data-block="panel" data-title="Настройки и изменения">
-<div class="stack-8">
-<div class="t-s sec">Источник ГИС</div>
-<div class="row-8" data-gis><a class="btn small sel" href="#" data-action="gis:GIS Portal">GIS Portal</a><a class="btn small" href="#" data-action="gis:ArcGIS Enterprise">ArcGIS Enterprise</a><a class="btn small" href="#" data-action="gis:WMS / WFS">WMS / WFS</a><a class="btn small" href="#" data-action="gis:GeoPackage">GeoPackage</a></div>
-<div class="t-s sec" data-gis-caption>Источник: GIS Portal</div>
-<div class="row-8"><span class="btn small">Настройки</span><span class="btn small">Изменения проекта</span></div>
-</div>
-</div>
-<div data-block="panel" data-title="Связанные материалы">
-<ul class="list">
-<li>Комплексный отчёт о геологическом строении и перспективности Верхне-Колпинской площади.pdf</li>
-<li>Интегрированная карта геолого-геофизических факторов.png</li>
-<li>Сводная ведомость пространственных признаков и интерпретаций.xlsx</li>
-<li>Отчёт по магнитной и геохимической интерпретации участка.pdf</li>
-</ul>
-</div>
-</div>
-<div data-block="chat" data-form="main"></div>
-</div></section>
-<section class="screen" id="new-project"><div class="cols">
+<section class="page-screen" id="new-project"><div class="three-columns">
 <div data-block="catalogue" data-state="none"></div>
-<div class="box bd-2s stack-16">
-<h1 class="t-l b">Создать проект</h1>
-<div class="stack-8">
-<div class="box bd-1d lines-1"><div class="t-s sec">Название</div></div>
-<div class="box bd-1d lines-2"><div class="t-s sec">Цель</div></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<h1>Создать проект</h1>
+<div class="vertical-stack-8">
+<div class="padded-box border-thin-dotted min-lines-one"><div class="text-small text-secondary">Название</div></div>
+<div class="padded-box border-thin-dotted min-lines-two"><div class="text-small text-secondary">Цель</div></div>
 </div>
 <div data-block="panel" data-title="Геоконтекст">
-<p class="sec">Геоконтекст не задан</p>
-<div class="row-8 end">
-<span class="btn">нарисовать на карте</span>
-<span class="btn">задать координаты</span>
+<p class="text-secondary">Геоконтекст не задан</p>
+<div class="horizontal-row-8 justify-end">
+<span class="push-button">нарисовать на карте</span>
+<span class="push-button">задать координаты</span>
 </div>
 </div>
 <div data-block="panel" data-title="Подключение ГИС">
-<p class="sec">ГИС не подключена</p>
-<div class="row-8 end">
-<span class="btn">подключить</span>
+<p class="text-secondary">ГИС не подключена</p>
+<div class="horizontal-row-8 justify-end">
+<span class="push-button">подключить</span>
 </div>
 </div>
 <div data-block="panel" data-title="Документы">
-<p class="sec">Документы не добавлены</p>
-<div class="row-8 end">
-<a class="btn" href="#project-draft">Добавить</a>
+<p class="text-secondary">Документы не добавлены</p>
+<div class="horizontal-row-8 justify-end">
+<a class="push-button" href="#project-draft">Добавить</a>
 </div>
 </div>
 </div>
 <div data-block="chat" data-form="main"></div>
 </div></section>
-<section class="screen" id="project-draft"><div class="cols">
+<section class="page-screen" id="project-draft"><div class="three-columns">
 <div data-block="catalogue" data-state="none"></div>
-<div class="box bd-2s stack-16">
-<h1 class="t-l b">Создать проект</h1>
-<div class="stack-8">
-<div class="box bd-1d lines-1"><div>Верхне-Колпинская площадь</div></div>
-<div class="box bd-1d lines-2"><div class="t-s sec">Цель</div></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<h1>Создать проект</h1>
+<div class="vertical-stack-8">
+<div class="padded-box border-thin-dotted min-lines-one"><div>Верхне-Колпинская площадь</div></div>
+<div class="padded-box border-thin-dotted min-lines-two"><div class="text-small text-secondary">Цель</div></div>
 </div>
 <div data-block="panel" data-title="Геоконтекст">
-<p class="sec">Геоконтекст не задан</p>
-<div class="row-8 end">
-<span class="btn">нарисовать на карте</span>
-<span class="btn">задать координаты</span>
+<p class="text-secondary">Геоконтекст не задан</p>
+<div class="horizontal-row-8 justify-end">
+<span class="push-button">нарисовать на карте</span>
+<span class="push-button">задать координаты</span>
 </div>
 </div>
 <div data-block="panel" data-title="Подключение ГИС">
 <div>ArcGIS Enterprise, gis-kola-02</div>
-<div class="t-s sec">Последняя синхронизация: 21.10.2026, 18:40</div>
-<div class="row-8 end">
-<span class="btn small">синхронизировать</span>
-<span class="btn small">удалить</span>
-<span class="btn small">подключить ещё</span>
+<div class="text-small text-secondary">Последняя синхронизация: 21.10.2026, 18:40</div>
+<div class="horizontal-row-8 justify-end">
+<span class="push-button size-small">синхронизировать</span>
+<span class="push-button size-small">удалить</span>
+<span class="push-button size-small">подключить ещё</span>
 </div>
 </div>
 <div data-block="panel" data-title="Документы">
-<div class="t-s sec">Верхне-Колпинская площадь · рабочий комплект</div>
-<div class="tiles">
+<div class="text-small text-secondary">Верхне-Колпинская площадь · рабочий комплект</div>
+<div class="tiles-grid">
 <div data-block="doctile" data-name="ВКП_комплексный_геологический_отчёт_2026.pdf" data-fmt="PDF" data-pct="82" data-date="21.10.2026" data-owner="Екатерина Волкова" data-checked="1"></div>
 <div data-block="doctile" data-name="ВКП_сводная_карта_геологических_структур.tif" data-fmt="TIF" data-pct="100" data-date="20.10.2026" data-owner="Александр Иванов" data-checked="1"></div>
 <div data-block="doctile" data-name="ВКП_карта_магнитных_аномалий_2026.tif" data-fmt="TIF" data-pct="45" data-date="19.10.2026" data-owner="Мария Петрова" data-checked="1"></div>
@@ -409,163 +380,349 @@
 <div data-block="doctile" data-name="ВКП_реестр_проектных_материалов_2026.xlsx" data-fmt="XLS" data-pct="36" data-date="21.10.2026" data-owner="Екатерина Волкова" data-checked="1"></div>
 </div>
 </div>
-<div class="row-8 end">
-<a class="btn" href="#project">Сохранить</a>
-<a class="btn" href="#main">удалить</a>
+<div class="horizontal-row-8 justify-end">
+<a class="push-button" href="#project">Сохранить</a>
+<a class="push-button" href="#main">удалить</a>
 </div>
 </div>
 <div data-block="chat" data-form="main"></div>
 </div></section>
-<section class="screen" id="document"><div class="cols">
+<section class="page-screen" id="document"><div class="three-columns">
 <div data-block="catalogue" data-state="none"></div>
-<div class="box bd-2s stack-16">
-<div class="stack-8">
-<h1 class="t-l b">Проверка документа</h1>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<div class="vertical-stack-8">
+<h1>Проверка документа</h1>
 <div>ВКП_комплексный_геологический_отчёт_2026.pdf</div>
-<div class="t-s sec">82% прочитано · 28 страниц · разобран 21.10.2026, 18:52</div>
+<div class="text-small text-secondary">82% прочитано · 28 страниц · разобран 21.10.2026, 18:52</div>
 </div>
 <p>Парсер прочитал 82% документа. Извлечено 12 из 15 вложений, 3 не удалось. 4 фрагмента не разобраны и перечислены ниже; остальной текст доступен агенту.</p>
 <div data-block="panel" data-title="Вложения">
-<ul class="list">
-<li><div>таблицы: 6 из 7</div><div class="t-s sec">результаты опробования по скважинам, по зонам, дубликаты QA/QC, стандарты, холостые пробы, реестр проб</div></li>
-<li><div>рисунки: 4 из 5</div><div class="t-s sec">план скважин, два разреза, гистограмма содержаний</div></li>
-<li><div>карты: 2 из 3</div><div class="t-s sec">обзорная карта, геологический лист с привязкой</div></li>
+<ul class="bullet-list">
+<li><div>таблицы: 6 из 7</div><div class="text-small text-secondary">результаты опробования по скважинам, по зонам, дубликаты QA/QC, стандарты, холостые пробы, реестр проб</div></li>
+<li><div>рисунки: 4 из 5</div><div class="text-small text-secondary">план скважин, два разреза, гистограмма содержаний</div></li>
+<li><div>карты: 2 из 3</div><div class="text-small text-secondary">обзорная карта, геологический лист с привязкой</div></li>
 </ul>
 </div>
 <div data-block="panel" data-title="Не извлечённые вложения">
-<ul class="list">
-<li><div>Таблица 4, сводка опробования по зонам</div><div class="t-s sec">объединённые ячейки, потеряны три столбца</div></li>
-<li><div>Рисунок 7, график мощность–содержание</div><div class="t-s sec">разрешение слишком низкое для распознавания</div></li>
-<li><div>Врезка листа Q-36-XIV</div><div class="t-s sec">не найдена привязка</div></li>
+<ul class="bullet-list">
+<li><div>Таблица 4, сводка опробования по зонам</div><div class="text-small text-secondary">объединённые ячейки, потеряны три столбца</div></li>
+<li><div>Рисунок 7, график мощность–содержание</div><div class="text-small text-secondary">разрешение слишком низкое для распознавания</div></li>
+<li><div>Врезка листа Q-36-XIV</div><div class="text-small text-secondary">не найдена привязка</div></li>
 </ul>
 </div>
 <div data-block="panel" data-title="Неразобранные фрагменты">
-<ul class="list">
-<li><div>страницы 9–10, приложение B</div><div class="t-s sec">скан повёрнут, уверенность распознавания 0,31</div></li>
-<li><div>страница 3, штамп</div><div class="t-s sec">рукописный текст</div></li>
-<li><div>страница 14, сноски</div><div class="t-s sec">шрифт не встроен</div></li>
-<li><div>страницы 17–18, сертификат лаборатории</div><div class="t-s sec">кириллица и латиница в одной строке, разбиение не удалось</div></li>
+<ul class="bullet-list">
+<li><div>страницы 9–10, приложение B</div><div class="text-small text-secondary">скан повёрнут, уверенность распознавания 0,31</div></li>
+<li><div>страница 3, штамп</div><div class="text-small text-secondary">рукописный текст</div></li>
+<li><div>страница 14, сноски</div><div class="text-small text-secondary">шрифт не встроен</div></li>
+<li><div>страницы 17–18, сертификат лаборатории</div><div class="text-small text-secondary">кириллица и латиница в одной строке, разбиение не удалось</div></li>
 </ul>
 </div>
-<div class="row-8 end">
-<a class="btn" href="#project-draft">перечитать</a>
-<a class="btn" href="#project-draft">принять</a>
-<a class="btn" href="#project-draft">удалить</a>
+<div class="horizontal-row-8 justify-end">
+<a class="push-button" href="#project-draft">перечитать</a>
+<a class="push-button" href="#project-draft">принять</a>
+<a class="push-button" href="#project-draft">удалить</a>
 </div>
 </div>
 <div data-block="chat" data-form="main"></div>
 </div></section>
-<section class="screen" id="ui">
-<div class="stack-16">
-<h1 class="t-l b">UI</h1>
-<h2 class="t-l b">Components</h2>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Section</h2>
-<div class="t-s sec">.section > .sec-l + .sec-r + .variants > [data-variant]</div>
-<div class="section">
-<span class="sec-l">Team</span>
-<span class="sec-r"><a class="b" href="#" data-action="variant:members">members</a> / <a href="#" data-action="variant:chrono">chrono</a></span>
-<div class="variants">
-<div class="stack-8" data-variant="members">
-<h2 class="t-m b">Team</h2>
-<ul class="list">
-<li><div>Person name</div><div class="t-s sec"><span class="u">Project</span> short description</div></li>
-<li><div>Another person</div><div class="t-s sec"><span class="u">Project</span> short description</div></li>
+<section class="page-screen" id="corpus"><div class="three-columns">
+<div data-block="navigation-menu" data-menu="tech" data-current="corpus"></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<div data-block="section" data-label="corpus state">
+<div class="vertical-stack-8">
+<h1>Наш корпус</h1>
+<p>За геологическим корпусом стоит проверенная методическая литература, нормативные документы и первичные материалы по объектам — всё, на что агент опирается в ответе и что можно проверить по источнику.</p>
+<div class="tiles-grid">
+<div data-block="literature-tile" data-name="Учебники" data-icon="book" data-open="textbooks"></div>
+<div data-block="literature-tile" data-name="Научные работы" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Методики и инструкции" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Нормативные документы" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Справочники и словари" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Отчёты по объектам" data-icon="page"></div>
+</div>
+</div>
+</div>
+<div data-block="section" data-label="agents">
+<div class="vertical-stack-16">
+<div class="vertical-stack-8">
+<h1>Наши ИИ геологи</h1>
+<p>Наши ИИ геологи — агенты, каждый из которых отвечает в своей предметной области и опирается на свою часть корпуса: учебники, инструкции и методики по ней.</p>
+</div>
+<div data-block="agent-card" data-agent="Геолог">
+<div data-block="literature-tile" data-name="Поиски и разведка месторождений полезных ископаемых" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Геология полезных ископаемых" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Логические сценарии, шаги 1–3" data-icon="page"></div>
+</div>
+<div data-block="agent-card" data-agent="Геофизик">
+<div data-block="literature-tile" data-name="Магниторазведка" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Геофизические методы исследования земной коры" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Инструкция по магниторазведке" data-icon="page"></div>
+</div>
+<div data-block="agent-card" data-agent="Геохимик">
+<div data-block="literature-tile" data-name="Геохимические методы поисков месторождений полезных ископаемых" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Геохимические поиски" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Инструкция по геохимическим методам поисков рудных месторождений" data-icon="page"></div>
+</div>
+<div data-block="agent-card" data-agent="Структурный геолог">
+<div data-block="literature-tile" data-name="Структурная геология" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Основы тектонофизики" data-icon="book"></div>
+</div>
+<div data-block="agent-card" data-agent="Агент ДЗЗ">
+<div data-block="literature-tile" data-name="Дистанционное изучение Земли" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Аэрокосмические методы геологических исследований" data-icon="page"></div>
+</div>
+</div>
+</div>
+<div data-block="section" data-label="expert models">
+<div class="vertical-stack-16">
+<div class="vertical-stack-8">
+<h1>Экспертные модели</h1>
+<p>Экспертные модели — формализованные представления признанных специалистов и институтов о строении месторождений: зональность, признаки и критерии, по которым агент сверяет данные проекта.</p>
+</div>
+<div data-block="profile-card" data-title="Ричард Силлитоу (Richard H. Sillitoe)" data-text="Модели порфировых медных и эпитермальных золотых систем: зональность оруденения, связь с интрузиями и признаки для поисков.">
+<div data-block="literature-tile" data-name="Porphyry Copper Systems" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Linkages between volcanotectonic settings, ore-fluid compositions, and epithermal precious metal deposits" data-icon="page"></div>
+</div>
+<div data-block="profile-card" data-title="ЦНИИГРИ" data-text="Прогнозно-поисковые модели рудных месторождений: типовые модели геолого-промышленных типов, критерии и признаки для оценки площадей.">
+<div data-block="literature-tile" data-name="Медно-порфировые месторождения мира" data-icon="book"></div>
+<div data-block="literature-tile" data-name="Методическое руководство по оценке прогнозных ресурсов алмазов, благородных и цветных металлов" data-icon="page"></div>
+</div>
+</div>
+</div>
+</div>
+<div data-block="chat" data-form="main"></div>
+</div></section>
+<section class="page-screen" id="collections"><div class="three-columns">
+<div data-block="navigation-menu" data-menu="tech" data-current="collections"></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<div data-block="section" data-label="intro">
+<p>Коллекции — это наборы файлов, которые вы собираете один раз и подключаете к любому проекту: методики, нормативы, эталонные материалы. Коллекция живёт отдельно от проектов и обновляется в одном месте.</p>
+</div>
+<div data-block="section" data-label="my collections">
+<div class="vertical-stack-8">
+<h1>Мои коллекции</h1>
+<div class="tiles-grid">
+<div data-block="literature-tile" data-name="Магниторазведка: методички" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Геохимия золота" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Нормативы ГКЗ" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Карты Кольского региона" data-icon="page"></div>
+</div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Редактировать</a></div>
+</div>
+</div>
+<div data-block="section" data-label="team collections">
+<div class="vertical-stack-8">
+<h1>Командные коллекции</h1>
+<div class="tiles-grid">
+<div data-block="literature-tile" data-name="Стандарты отчётов" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Эталонные разрезы" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Лицензионные документы" data-icon="page"></div>
+<div data-block="literature-tile" data-name="Словари и классификаторы" data-icon="page"></div>
+</div>
+<div class="horizontal-row-8 justify-end"><a class="push-button size-small">Редактировать</a></div>
+</div>
+</div>
+</div>
+<div data-block="chat" data-form="main"></div>
+</div></section>
+<section class="page-screen" id="knowledge"><div class="three-columns">
+<div data-block="navigation-menu" data-menu="tech" data-current="knowledge"></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<div data-block="section" data-label="howto">
+<div class="vertical-stack-16">
+<div class="vertical-stack-8">
+<h2>Начало работы</h2>
+<ul class="bullet-list without-bullets">
+<li><a class="text-underline">Как создать проект</a></li>
+<li><a class="text-underline">Как подключить ГИС-источник</a></li>
+<li><a class="text-underline">Как загрузить документы</a></li>
+<li><a class="text-underline">Как проверить разбор документа</a></li>
 </ul>
 </div>
-<div class="stack-8" data-variant="chrono" hidden>
-<h2 class="t-m b">Latest team activity</h2>
-<ul class="list">
-<li><div>Project · 21.10.2026</div><div class="t-s sec">Person name · short description</div></li>
-<li><div>Project · 20.10.2026</div><div class="t-s sec">Another person · short description</div></li>
+<div class="vertical-stack-8">
+<h2>Работа с ИИ</h2>
+<ul class="bullet-list without-bullets">
+<li><a class="text-underline">Как выбрать роль агента</a></li>
+<li><a class="text-underline">Как задать вопрос по корпусу</a></li>
+<li><a class="text-underline">Как читать ссылки на источники в ответе</a></li>
+<li><a class="text-underline">Как получить артефакт: разрез, сетку, отчёт</a></li>
+</ul>
+</div>
+<div class="vertical-stack-8">
+<h2>Корпус и коллекции</h2>
+<ul class="bullet-list without-bullets">
+<li><a class="text-underline">Что входит в корпус проекта</a></li>
+<li><a class="text-underline">Как создать коллекцию</a></li>
+<li><a class="text-underline">Как подключить коллекцию к проекту</a></li>
+<li><a class="text-underline">Как поделиться коллекцией с командой</a></li>
+</ul>
+</div>
+<div class="vertical-stack-8">
+<h2>Геотизер и карта</h2>
+<ul class="bullet-list without-bullets">
+<li><a class="text-underline">Как заполнить геотизер</a></li>
+<li><a class="text-underline">Как настроить слои карты</a></li>
+<li><a class="text-underline">Как сравнить исходные данные и модель</a></li>
+</ul>
+</div>
+<div class="vertical-stack-8">
+<h2>Команда</h2>
+<ul class="bullet-list without-bullets">
+<li><a class="text-underline">Как пригласить участника</a></li>
+<li><a class="text-underline">Как читать командную ленту</a></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Meta</h2>
-<div class="spec">
-<span class="t-s sec">.meta</span><span class="sample meta">Design team note</span>
-<span class="t-s sec">.btn .meta[href]</span><div class="sample row-8"><a class="btn meta" href="#main">Live</a></div>
-<span class="t-s sec">.btn .small .meta[href]</span><div class="sample row-8"><a class="btn small meta" href="#main">Small live</a></div>
+<div data-block="chat" data-form="main"></div>
+</div></section>
+<section class="page-screen" id="admin"><div class="two-columns-layout">
+<div data-block="navigation-menu" data-menu="admin" data-current="admin"></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<div data-block="section" data-label="main corpus"><div data-block="platform-selection" data-entity="main-corpus"></div></div>
+<div data-block="section" data-label="agent: geologist"><div data-block="platform-selection" data-entity="agent-geologist"></div></div>
+<div data-block="section" data-label="agent: geophysicist"><div data-block="platform-selection" data-entity="agent-geophysicist"></div></div>
+<div data-block="section" data-label="agent: geochemist"><div data-block="platform-selection" data-entity="agent-geochemist"></div></div>
+<div data-block="section" data-label="agent: structural geologist"><div data-block="platform-selection" data-entity="agent-structural"></div></div>
+<div data-block="section" data-label="agent: remote sensing"><div data-block="platform-selection" data-entity="agent-remote-sensing"></div></div>
+<div data-block="section" data-label="expert model: Sillitoe"><div data-block="platform-selection" data-entity="model-sillitoe"></div></div>
+<div data-block="section" data-label="expert model: TsNIIGRI"><div data-block="platform-selection" data-entity="model-tsniigri"></div></div>
+<div data-block="section" data-label="stage2" data-meta="Запланировано на этап 2, здесь только для демонстрации"></div>
+</div>
+</div></section>
+<section class="page-screen" id="admin-accounts"><div class="two-columns-layout">
+<div data-block="navigation-menu" data-menu="admin" data-current="admin-accounts"></div>
+<div class="padded-box border-thick-solid vertical-stack-16">
+<div data-block="section" data-label="accounts">
+<div class="vertical-stack-8">
+<h1>Аккаунты и подписки</h1>
+<div data-block="team-accounts-table"></div>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Headings</h2>
-<div class="spec">
-<span class="t-s sec">.t-l .b</span><span class="sample t-l b">Screen title</span>
-<span class="t-s sec">.t-m .b</span><span class="sample t-m b">Section title</span>
-<span class="t-s sec">.t-s .sec</span><span class="sample t-s sec">Group</span>
-<span class="t-s sec">.t-s .sec</span><span class="sample t-s sec">Context: project</span>
+<div data-block="section" data-label="stage2" data-meta="Запланировано на этап 2, здесь только для демонстрации"></div>
 </div>
-</div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Button</h2>
-<div class="spec">
-<span class="t-s sec">.btn[href]</span><div class="sample row-8"><a class="btn" href="#main">Live</a><a class="btn" href="#main">+</a></div>
-<span class="t-s sec">.btn</span><div class="sample row-8"><a class="btn">Dead</a></div>
-<span class="t-s sec">.btn .wide</span><div class="sample"><a class="btn wide">Wide</a></div>
-<span class="t-s sec">.btn .small[href]</span><div class="sample row-8"><a class="btn small" href="#main">Small live</a></div>
-<span class="t-s sec">.btn .small</span><div class="sample row-8"><a class="btn small">Small dead</a></div>
-<span class="t-s sec">.btn .sel</span><div class="sample row-8"><a class="btn sel">Selected</a></div>
-<span class="t-s sec">.btn .small .sel</span><div class="sample row-8"><a class="btn small sel">Small selected</a></div>
-<span class="t-s sec">.btn .small + .sel</span><div class="sample row-8"><a class="btn small sel">Option 1</a><a class="btn small">Option 2</a><a class="btn small">Option 3</a></div>
-<span class="t-s sec">.btn .small .icon .sel</span><div class="sample row-8"><a class="btn small icon sel"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>On</span></div>
-<span class="t-s sec">.btn .small .icon</span><div class="sample row-8"><a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Off</span></div>
-<span class="t-s sec">.btn .small .icon</span><div class="sample row-8">
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
-<a class="btn small icon sel"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"></circle><path d="M8 7.5v4M8 4.6v.2"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M3 13l1-4 7-7 3 3-7 7-4 1z"></path><path d="M10 3l3 3"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M10 3l-5 5 5 5"></path></svg></a>
-</div>
-</div>
-</div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Text link</h2>
-<div class="spec">
-<span class="t-s sec">.u[href]</span><span class="sample"><a class="u" href="#main">Live</a></span>
-<span class="t-s sec">.u</span><span class="sample"><a class="u">Dead</a></span>
-<span class="t-s sec">.t-s .sec > .u</span><span class="sample t-s sec"><span class="u">Project</span> short description</span>
-</div>
-</div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">List</h2>
-<div class="t-s sec">.list</div>
-<ul class="list">
-<li><div>Item name</div><div class="t-s sec">Short description</div></li>
-<li><div>Artefact name</div><div class="t-s sec"><span class="u">Project</span> short description</div></li>
+</div></section>
+<section class="page-screen" id="ui">
+<div class="vertical-stack-16">
+<h1>UI</h1>
+<h2>Components</h2>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Section</h2>
+<div class="text-small text-secondary">.named-section > .section-label + .section-switcher + .design-meta (optional meta text, shown first) + .variant-container > [data-variant]</div>
+<div class="named-section">
+<span class="section-label">Team</span>
+<span class="section-switcher"><a class="weight-bold" href="#" data-action="variant:members">members</a> / <a href="#" data-action="variant:chrono">chrono</a></span>
+<div class="design-meta">Meta text of the section, shown first</div>
+<div class="variant-container">
+<div class="vertical-stack-8" data-variant="members">
+<h2>Team</h2>
+<ul class="bullet-list">
+<li><div>Person name</div><div class="text-small text-secondary"><span class="text-underline">Project</span> short description</div></li>
+<li><div>Another person</div><div class="text-small text-secondary"><span class="text-underline">Project</span> short description</div></li>
 </ul>
-<div class="t-s sec">.list .plain</div>
-<div class="t-s sec">Group</div>
-<ul class="list plain">
-<li><div>Plain item</div><div class="t-s sec">Short description</div></li>
-<li><div>Another item</div><div class="t-s sec">Short description</div></li>
-</ul>
-<div class="t-s sec">.summary-section + .summary-extra + .btn .small .abs-br</div>
-<div class="box bd-1d stack-8 rel summary-section" data-summary-section="ui-sample">
-<a class="btn small abs-br" data-action="expand:ui-sample" data-expand="Expand" data-collapse="Collapse" href="#">Expand</a>
-<h2 class="t-m b">Section title</h2>
-<ul class="list">
-<li><div>Visible item</div><div class="t-s sec">Short description</div></li>
-<li class="summary-extra"><div>Hidden item</div><div class="t-s sec">Short description</div></li>
+</div>
+<div class="vertical-stack-8" data-variant="chrono" hidden>
+<h2>Latest team activity</h2>
+<ul class="bullet-list">
+<li><div>Project · 21.10.2026</div><div class="text-small text-secondary">Person name · short description</div></li>
+<li><div>Project · 20.10.2026</div><div class="text-small text-secondary">Another person · short description</div></li>
 </ul>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Key value row</h2>
-<div class="t-s sec">.row-8 .between > .sec + .b</div>
-<div class="row-8 between"><span class="sec">Key</span><span class="b">Value</span></div>
-<div class="row-8 between"><span class="sec">Another key</span><span class="b">Another value</span></div>
-<div class="row-8 between"><span class="sec">Third key</span><span class="b">Third value</span></div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Table</h2>
-<div class="t-s sec">.table</div>
-<table class="table">
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Meta</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.design-meta</span><span class="sample-cell design-meta">Design team note</span>
+<span class="text-small text-secondary">.push-button .design-meta[href]</span><div class="sample-cell horizontal-row-8"><a class="push-button design-meta" href="#main">Live</a></div>
+<span class="text-small text-secondary">.push-button .design-meta</span><div class="sample-cell horizontal-row-8"><a class="push-button design-meta">Dead</a></div>
+<span class="text-small text-secondary">.push-button .size-small .design-meta[href]</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small design-meta" href="#main">Small live</a></div>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Headings</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">h1</span><h1 class="sample-cell">Screen title</h1>
+<span class="text-small text-secondary">h2</span><h2 class="sample-cell">Section title</h2>
+<span class="text-small text-secondary">.text-small .text-secondary</span><span class="sample-cell text-small text-secondary">Group</span>
+<span class="text-small text-secondary">.text-small .text-secondary</span><span class="sample-cell text-small text-secondary">Context: project</span>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Button</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.push-button[href]</span><div class="sample-cell horizontal-row-8"><a class="push-button" href="#main">Live</a><a class="push-button" href="#main">+</a></div>
+<span class="text-small text-secondary">.push-button</span><div class="sample-cell horizontal-row-8"><a class="push-button">Dead</a></div>
+<span class="text-small text-secondary">.push-button .full-width</span><div class="sample-cell"><a class="push-button full-width">Wide</a></div>
+<span class="text-small text-secondary">.push-button .size-small[href]</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small" href="#main">Small live</a></div>
+<span class="text-small text-secondary">.push-button .size-small</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small">Small dead</a></div>
+<span class="text-small text-secondary">.push-button .selected-state</span><div class="sample-cell horizontal-row-8"><a class="push-button selected-state">Selected</a></div>
+<span class="text-small text-secondary">.push-button .size-small .selected-state</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small selected-state">Small selected</a></div>
+<span class="text-small text-secondary">.push-button .size-small + .selected-state</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small selected-state">Option 1</a><a class="push-button size-small">Option 2</a><a class="push-button size-small">Option 3</a></div>
+<span class="text-small text-secondary">.push-button .size-small .icon-button .selected-state</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small icon-button selected-state"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>On</span></div>
+<span class="text-small text-secondary">.push-button .size-small .icon-button</span><div class="sample-cell horizontal-row-8"><a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a><span>Off</span></div>
+<span class="text-small text-secondary">.push-button .size-small .icon-button</span><div class="sample-cell horizontal-row-8">
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
+<a class="push-button size-small icon-button selected-state"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"></circle><path d="M8 7.5v4M8 4.6v.2"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M3 13l1-4 7-7 3 3-7 7-4 1z"></path><path d="M10 3l3 3"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M10 3l-5 5 5 5"></path></svg></a>
+</div>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Text link</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.text-underline[href]</span><span class="sample-cell"><a class="text-underline" href="#main">Live</a></span>
+<span class="text-small text-secondary">.text-underline</span><span class="sample-cell"><a class="text-underline">Dead</a></span>
+<span class="text-small text-secondary">.text-small .text-secondary > .text-underline</span><span class="sample-cell text-small text-secondary"><span class="text-underline">Project</span> short description</span>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>List</h2>
+<div class="text-small text-secondary">.bullet-list</div>
+<ul class="bullet-list">
+<li><div>Item name</div><div class="text-small text-secondary">Short description</div></li>
+<li><div>Artefact name</div><div class="text-small text-secondary"><span class="text-underline">Project</span> short description</div></li>
+</ul>
+<div class="text-small text-secondary">.bullet-list .without-bullets</div>
+<div class="text-small text-secondary">Group</div>
+<ul class="bullet-list without-bullets">
+<li><div>Plain item</div><div class="text-small text-secondary">Short description</div></li>
+<li><div>Another item</div><div class="text-small text-secondary">Short description</div></li>
+</ul>
+<div class="text-small text-secondary">.navigation-list > li.selected-state</div>
+<ul class="navigation-list">
+<li><a class="text-underline" href="#ui">First entry</a></li>
+<li class="selected-state"><a class="text-underline">Selected entry</a></li>
+<li><a class="text-underline" href="#ui">Third entry</a></li>
+</ul>
+<div class="text-small text-secondary">.summary-section + .summary-extra + .push-button .size-small .absolute-bottom-right</div>
+<div class="padded-box border-thin-dotted vertical-stack-8 position-relative summary-section" data-summary-section="ui-sample">
+<a class="push-button size-small absolute-bottom-right" data-action="expand:ui-sample" data-expand="Expand" data-collapse="Collapse" href="#">Expand</a>
+<h2>Section title</h2>
+<ul class="bullet-list">
+<li><div>Visible item</div><div class="text-small text-secondary">Short description</div></li>
+<li class="summary-extra"><div>Hidden item</div><div class="text-small text-secondary">Short description</div></li>
+</ul>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Key value row</h2>
+<div class="text-small text-secondary">.horizontal-row-8 .justify-between > .text-secondary + .weight-bold</div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Key</span><span class="weight-bold">Value</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Another key</span><span class="weight-bold">Another value</span></div>
+<div class="horizontal-row-8 justify-between"><span class="text-secondary">Third key</span><span class="weight-bold">Third value</span></div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Table</h2>
+<div class="text-small text-secondary">.data-table</div>
+<table class="data-table">
 <thead><tr><th>Section</th><th>Attribute</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td>First section</td><td>Attribute</td><td>Value</td></tr>
@@ -573,92 +730,92 @@
 </tbody>
 </table>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Inputs</h2>
-<div class="spec">
-<span class="t-s sec">.box .bd-1d .lines-1</span><div class="sample"><div class="box bd-1d lines-1"><div class="t-s sec">Placeholder</div></div></div>
-<span class="t-s sec">.box .bd-1d .lines-2</span><div class="sample"><div class="box bd-1d lines-2"><div class="t-s sec">Placeholder</div></div></div>
-<span class="t-s sec">.box .bd-1d .lines-1</span><div class="sample"><div class="box bd-1d lines-1"><div>Entered value</div></div></div>
-<span class="t-s sec">.box .bd-1d .lines-4</span><div class="sample"><div class="box bd-1d lines-4"></div></div>
-<span class="t-s sec">.field</span><div class="sample"><input class="field" type="password" value="password"></div>
-<span class="t-s sec">.box .bd-1d .lines-6 .col-8 > .row-8 .bottom .between</span><div class="sample"><div class="box bd-1d lines-6 col-8"><div class="row-8 bottom between"><div class="row-8"><a class="btn small">Agent</a><a class="btn small">School</a></div><a class="btn small sel">Send</a></div></div></div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Inputs</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.padded-box .border-thin-dotted .min-lines-one</span><div class="sample-cell"><div class="padded-box border-thin-dotted min-lines-one"><div class="text-small text-secondary">Placeholder</div></div></div>
+<span class="text-small text-secondary">.padded-box .border-thin-dotted .min-lines-two</span><div class="sample-cell"><div class="padded-box border-thin-dotted min-lines-two"><div class="text-small text-secondary">Placeholder</div></div></div>
+<span class="text-small text-secondary">.padded-box .border-thin-dotted .min-lines-one</span><div class="sample-cell"><div class="padded-box border-thin-dotted min-lines-one"><div>Entered value</div></div></div>
+<span class="text-small text-secondary">.padded-box .border-thin-dotted .min-lines-four</span><div class="sample-cell"><div class="padded-box border-thin-dotted min-lines-four"></div></div>
+<span class="text-small text-secondary">.text-field</span><div class="sample-cell"><input class="text-field" type="password" value="password"></div>
+<span class="text-small text-secondary">.padded-box .border-thin-dotted .min-lines-six .flex-column-8 > .horizontal-row-8 .push-to-bottom .justify-between</span><div class="sample-cell"><div class="padded-box border-thin-dotted min-lines-six flex-column-8"><div class="horizontal-row-8 push-to-bottom justify-between"><div class="horizontal-row-8"><a class="push-button size-small">Agent</a><a class="push-button size-small">School</a></div><a class="push-button size-small selected-state">Send</a></div></div></div>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Chat log</h2>
-<div class="t-s sec">.section > .sec-l + .chatlog .stack-8 > message (.t-s .sec + text)</div>
-<div class="section"><span class="sec-l">Conversation</span>
-<div class="stack-8 chatlog">
-<div><div class="t-s sec">You · 09:40</div><div>Message text from the user.</div></div>
-<div><div class="t-s sec">Agent · 09:41</div><div>Reply text from the agent.</div></div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Chat log</h2>
+<div class="text-small text-secondary">.named-section > .section-label + .chat-messages .vertical-stack-8 > message (.text-small .text-secondary + text)</div>
+<div class="named-section"><span class="section-label">Conversation</span>
+<div class="vertical-stack-8 chat-messages">
+<div><div class="text-small text-secondary">You · 09:40</div><div>Message text from the user.</div></div>
+<div><div class="text-small text-secondary">Agent · 09:41</div><div>Reply text from the agent.</div></div>
 </div>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Panel</h2>
-<div class="t-s sec">.box .bd-1d .stack-8 > h2 .t-m .b</div>
-<div class="box bd-1d stack-8">
-<h2 class="t-m b">Section title</h2>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Panel</h2>
+<div class="text-small text-secondary">.padded-box .border-thin-dotted .vertical-stack-8 > h2</div>
+<div class="padded-box border-thin-dotted vertical-stack-8">
+<h2>Section title</h2>
 <p>Section content.</p>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">File icon</h2>
-<div class="spec">
-<span class="t-s sec">.fileicon > .b + div</span><div class="sample row-8"><div class="fileicon"><div class="b">PDF</div><div>82%</div></div><div class="fileicon"><div class="b">XLS</div><div>100%</div></div><div class="fileicon"><div class="b">GEO</div><div>7%</div></div><div class="fileicon"><div class="b">GIS</div><div>100%</div></div></div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>File icon</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.file-format-icon > .weight-bold + div</span><div class="sample-cell horizontal-row-8"><div class="file-format-icon"><div class="weight-bold">PDF</div><div>82%</div></div><div class="file-format-icon"><div class="weight-bold">XLS</div><div>100%</div></div><div class="file-format-icon"><div class="weight-bold">GEO</div><div>7%</div></div><div class="file-format-icon"><div class="weight-bold">GIS</div><div>100%</div></div></div>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Corpus tile</h2>
-<div class="t-s sec">.corpus > .t-s .clamp-3 + .row-8 > .fileicon + (.t-s .sec .clamp-1, .t-s .sec)</div>
-<div class="tiles">
-<div class="corpus stack-8">
-<div class="t-s clamp-3">very_long_document_name_that_will_not_fit_in_three_lines_at_all.pdf</div>
-<div class="row-8">
-<div class="fileicon"><div class="b">PDF</div><div>82%</div></div>
-<div><div class="t-s sec clamp-1">Owner name that is too long</div><div class="t-s sec">21.10.2026</div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Document tile</h2>
-<div class="t-s sec">.tiles > .stack-8: .corpus, .btn .small .icon</div>
-<div class="tiles">
-<div class="stack-8">
-<div class="corpus stack-8">
-<div class="t-s clamp-3">very_long_document_name_that_will_not_fit_in_three_lines_at_all.pdf</div>
-<div class="row-8">
-<div class="fileicon"><div class="b">PDF</div><div>82%</div></div>
-<div><div class="t-s sec clamp-1">Owner name</div><div class="t-s sec">21.10.2026</div></div>
-</div>
-</div>
-<div class="row-8">
-<a class="btn small icon sel"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"></circle><path d="M8 7.5v4M8 4.6v.2"></path></svg></a>
-</div>
-</div>
-<div class="stack-8">
-<div class="corpus stack-8">
-<div class="t-s clamp-3">short_name.pdf</div>
-<div class="row-8">
-<div class="fileicon"><div class="b">PDF</div><div>7%</div></div>
-<div><div class="t-s sec clamp-1">Another owner</div><div class="t-s sec">20.10.2026</div></div>
-</div>
-</div>
-<div class="row-8">
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a>
-<a class="btn small icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"></circle><path d="M8 7.5v4M8 4.6v.2"></path></svg></a>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Corpus tile</h2>
+<div class="text-small text-secondary">.corpus-tile > .text-small .clamp-three-lines + .horizontal-row-8 > .file-format-icon + (.text-small .text-secondary .clamp-one-line, .text-small .text-secondary)</div>
+<div class="tiles-grid">
+<div class="corpus-tile vertical-stack-8">
+<div class="text-small clamp-three-lines">very_long_document_name_that_will_not_fit_in_three_lines_at_all.pdf</div>
+<div class="horizontal-row-8">
+<div class="file-format-icon"><div class="weight-bold">PDF</div><div>82%</div></div>
+<div><div class="text-small text-secondary clamp-one-line">Owner name that is too long</div><div class="text-small text-secondary">21.10.2026</div></div>
 </div>
 </div>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Map scheme</h2>
-<div class="t-s sec">.map</div>
-<svg class="map" viewBox="0 0 640 200" role="img" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Document tile</h2>
+<div class="text-small text-secondary">.tiles-grid > .vertical-stack-8: .corpus-tile, .push-button .size-small .icon-button</div>
+<div class="tiles-grid">
+<div class="vertical-stack-8">
+<div class="corpus-tile vertical-stack-8">
+<div class="text-small clamp-three-lines">very_long_document_name_that_will_not_fit_in_three_lines_at_all.pdf</div>
+<div class="horizontal-row-8">
+<div class="file-format-icon"><div class="weight-bold">PDF</div><div>82%</div></div>
+<div><div class="text-small text-secondary clamp-one-line">Owner name</div><div class="text-small text-secondary">21.10.2026</div></div>
+</div>
+</div>
+<div class="horizontal-row-8">
+<a class="push-button size-small icon-button selected-state"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"></circle><path d="M8 7.5v4M8 4.6v.2"></path></svg></a>
+</div>
+</div>
+<div class="vertical-stack-8">
+<div class="corpus-tile vertical-stack-8">
+<div class="text-small clamp-three-lines">short_name.pdf</div>
+<div class="horizontal-row-8">
+<div class="file-format-icon"><div class="weight-bold">PDF</div><div>7%</div></div>
+<div><div class="text-small text-secondary clamp-one-line">Another owner</div><div class="text-small text-secondary">20.10.2026</div></div>
+</div>
+</div>
+<div class="horizontal-row-8">
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 4.5"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a>
+<a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"></circle><path d="M8 7.5v4M8 4.6v.2"></path></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Map scheme</h2>
+<div class="text-small text-secondary">.map-scheme</div>
+<svg class="map-scheme" viewBox="0 0 640 200" role="img" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
 <path d="M40 30L200 20L230 110L120 160L40 110Z" stroke-width="1" stroke-dasharray="0 2" fill="#fff"></path>
 <path d="M260 40L600 30L610 150L270 170Z" stroke-width="2"></path>
 <path d="M300 180L420 60L560 40" stroke-width="1"></path>
@@ -668,93 +825,98 @@
 <text x="12" y="188" fill="#000" stroke="none" font-size="11">SCHEME LABEL</text>
 </svg>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Dialog</h2>
-<div class="t-s sec">.pop > .dialog .box .bd-2s .stack-16</div>
-<div class="dialog box bd-2s stack-16">
-<div class="row-8 between"><h2 class="t-m b">Dialog title</h2><a class="btn small">Close</a></div>
-<div class="stack-8"><p>Dialog text.</p><a class="btn">Action</a></div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Dialog</h2>
+<div class="text-small text-secondary">.modal-backdrop (::before #fff opacity .7) > .modal-dialog .padded-box .border-thick-solid .vertical-stack-16 > .horizontal-row-8 .justify-between > h2 + .push-button .size-small .icon-button</div>
+<div class="modal-dialog padded-box border-thick-solid vertical-stack-16">
+<div class="horizontal-row-8 justify-between"><h2>Title</h2><a class="push-button size-small icon-button"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"></path></svg></a></div>
+<div class="vertical-stack-8"><div class="horizontal-row-8"><a class="push-button">Action</a><a class="push-button">Another action</a></div></div>
 </div>
-<div class="row-8"><a class="btn" data-action="agent" href="#">Open dialog</a></div>
+<div class="horizontal-row-8"><a class="push-button" data-action="role" href="#">Open dialog</a></div>
 </div>
-<h2 class="t-l b">Screens</h2>
-<div class="box bd-1s stack-8">
-<div class="row-16">
-<a class="u" href="#login">#login</a>
-<a class="u" href="#welcome">#welcome</a>
-<a class="u" href="#main">#main</a>
-<a class="u" href="#project">#project</a>
-<a class="u" href="#new-project">#new-project</a>
-<a class="u" href="#project-draft">#project-draft</a>
-<a class="u" href="#document">#document</a>
-<a class="u">#ui</a>
-</div>
-</div>
-<h2 class="t-l b">Technical parameters</h2>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Page</h2>
-<div class="spec">
-<span class="t-s sec">background</span><span class="sample">#fff</span>
-<span class="t-s sec">text</span><span class="sample">#000</span>
-<span class="t-s sec">font</span><span class="sample">Roboto Mono</span>
-<span class="t-s sec">size</span><span class="sample">14</span>
-<span class="t-s sec">line height</span><span class="sample">1.5</span>
-<span class="t-s sec">padding</span><span class="sample">16</span>
-<span class="t-s sec">selection</span><span class="sample">off</span>
-<span class="t-s sec">scrollbar</span><span class="sample">thin, #efefef</span>
+<h2>Screens</h2>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<div class="horizontal-row-16">
+<a class="text-underline" href="#login">#login</a>
+<a class="text-underline" href="#welcome">#welcome</a>
+<a class="text-underline" href="#main">#main</a>
+<a class="text-underline" href="#project">#project</a>
+<a class="text-underline" href="#new-project">#new-project</a>
+<a class="text-underline" href="#project-draft">#project-draft</a>
+<a class="text-underline" href="#document">#document</a>
+<a class="text-underline">#ui</a>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Text</h2>
-<div class="spec">
-<span class="t-s sec">.t-s 11</span><span class="sample t-s">The quick brown fox jumps over the lazy dog 0123456789</span>
-<span class="t-s sec">.t-s .b</span><span class="sample t-s b">The quick brown fox jumps over the lazy dog 0123456789</span>
-<span class="t-s sec">.t-m 14</span><span class="sample t-m">The quick brown fox jumps over the lazy dog 0123456789</span>
-<span class="t-s sec">.t-m .b</span><span class="sample t-m b">The quick brown fox jumps over the lazy dog 0123456789</span>
-<span class="t-s sec">.t-l 20</span><span class="sample t-l">The quick brown fox jumps over the lazy dog</span>
-<span class="t-s sec">.t-l .b</span><span class="sample t-l b">The quick brown fox jumps over the lazy dog</span>
-<span class="t-s sec">.sec 0.7</span><span class="sample sec">The quick brown fox jumps over the lazy dog 0123456789</span>
-<span class="t-s sec">.u</span><span class="sample u">The quick brown fox jumps over the lazy dog 0123456789</span>
-<span class="t-s sec">cyrillic</span><span class="sample">Съешь ещё этих мягких французских булок 0123456789</span>
+<h2>Technical parameters</h2>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Page</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">background</span><span class="sample-cell">#fff</span>
+<span class="text-small text-secondary">text</span><span class="sample-cell">#000</span>
+<span class="text-small text-secondary">font</span><span class="sample-cell">Roboto Mono</span>
+<span class="text-small text-secondary">size</span><span class="sample-cell">14</span>
+<span class="text-small text-secondary">line height</span><span class="sample-cell">1.5</span>
+<span class="text-small text-secondary">padding</span><span class="sample-cell">16</span>
+<span class="text-small text-secondary">selection</span><span class="sample-cell">off</span>
+<span class="text-small text-secondary">scrollbar</span><span class="sample-cell">thin, #efefef</span>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Box</h2>
-<div class="spec">
-<span class="t-s sec">padding</span><span class="sample">16</span>
-<span class="t-s sec">radius</span><span class="sample">4</span>
-</div>
-<div class="box">.box</div>
-<div class="box bd-1s">.box .bd-1s</div>
-<div class="box bd-1d">.box .bd-1d</div>
-<div class="box bd-2s">.box .bd-2s</div>
-<div class="box bd-2d">.box .bd-2d</div>
-</div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Columns</h2>
-<div class="spec">
-<span class="t-s sec">.cols</span><span class="sample">15 / 50 / 35, gap 16</span>
-<span class="t-s sec">.cols .collapsed</span><span class="sample">strip / 65 / 35</span>
-</div>
-<div class="cols">
-<div class="box bd-2s">15</div>
-<div class="box bd-2s">50</div>
-<div class="box bd-2s">35</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Text</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.text-small 11</span><span class="sample-cell text-small">The quick brown fox jumps over the lazy dog 0123456789</span>
+<span class="text-small text-secondary">.text-small .weight-bold</span><span class="sample-cell text-small weight-bold">The quick brown fox jumps over the lazy dog 0123456789</span>
+<span class="text-small text-secondary">.text-medium 14</span><span class="sample-cell text-medium">The quick brown fox jumps over the lazy dog 0123456789</span>
+<span class="text-small text-secondary">.text-medium .weight-bold</span><span class="sample-cell text-medium weight-bold">The quick brown fox jumps over the lazy dog 0123456789</span>
+<span class="text-small text-secondary">.text-large 20</span><span class="sample-cell text-large">The quick brown fox jumps over the lazy dog</span>
+<span class="text-small text-secondary">.text-large .weight-bold</span><span class="sample-cell text-large weight-bold">The quick brown fox jumps over the lazy dog</span>
+<span class="text-small text-secondary">.text-secondary 0.7</span><span class="sample-cell text-secondary">The quick brown fox jumps over the lazy dog 0123456789</span>
+<span class="text-small text-secondary">.text-underline</span><span class="sample-cell text-underline">The quick brown fox jumps over the lazy dog 0123456789</span>
+<span class="text-small text-secondary">cyrillic</span><span class="sample-cell">Съешь ещё этих мягких французских булок 0123456789</span>
 </div>
 </div>
-<div class="box bd-1s stack-8">
-<h2 class="t-m b">Spacing</h2>
-<div class="spec">
-<span class="t-s sec">step</span><span class="sample">8, 16; 4 small button vertical only; 24 tile rows</span>
-<span class="t-s sec">.stack-8 / .stack-16</span><span class="sample">8 / 16 vertical</span>
-<span class="t-s sec">.row-8 / .row-16</span><span class="sample">8 / 16 horizontal</span>
-<span class="t-s sec">.end</span><span class="sample">right</span>
-<span class="t-s sec">.between</span><span class="sample">space between</span>
-<span class="t-s sec">.col-8</span><span class="sample">column, 8</span>
-<span class="t-s sec">.bottom</span><span class="sample">column bottom</span>
-<span class="t-s sec">.start / .self-end</span><span class="sample">column left / right edge</span>
-<span class="t-s sec">.rel + .abs-br</span><span class="sample">bottom right, 16</span>
-<span class="t-s sec">.tiles</span><span class="sample">row 24, column 8</span>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Box</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">padding</span><span class="sample-cell">16</span>
+<span class="text-small text-secondary">radius</span><span class="sample-cell">4</span>
+</div>
+<div class="padded-box">.padded-box</div>
+<div class="padded-box border-thin-solid">.padded-box .border-thin-solid</div>
+<div class="padded-box border-thin-dotted">.padded-box .border-thin-dotted</div>
+<div class="padded-box border-thick-solid">.padded-box .border-thick-solid</div>
+<div class="padded-box border-thick-dotted">.padded-box .border-thick-dotted</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Columns</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">.three-columns</span><span class="sample-cell">15 / 50 / 35, gap 16</span>
+<span class="text-small text-secondary">.three-columns .catalogue-collapsed</span><span class="sample-cell">strip / 65 / 35</span>
+<span class="text-small text-secondary">.two-columns-layout</span><span class="sample-cell">15 / 85, gap 16, no chat column</span>
+</div>
+<div class="three-columns">
+<div class="padded-box border-thick-solid">15</div>
+<div class="padded-box border-thick-solid">50</div>
+<div class="padded-box border-thick-solid">35</div>
+</div>
+<div class="two-columns-layout">
+<div class="padded-box border-thick-solid">15</div>
+<div class="padded-box border-thick-solid">85</div>
+</div>
+</div>
+<div class="padded-box border-thin-solid vertical-stack-8">
+<h2>Spacing</h2>
+<div class="two-column-grid">
+<span class="text-small text-secondary">step</span><span class="sample-cell">8, 16; 4 small button vertical only; 24 tile rows</span>
+<span class="text-small text-secondary">.vertical-stack-8 / .vertical-stack-16</span><span class="sample-cell">8 / 16 vertical</span>
+<span class="text-small text-secondary">.horizontal-row-8 / .horizontal-row-16</span><span class="sample-cell">8 / 16 horizontal</span>
+<span class="text-small text-secondary">.justify-end</span><span class="sample-cell">right</span>
+<span class="text-small text-secondary">.justify-between</span><span class="sample-cell">space between</span>
+<span class="text-small text-secondary">.flex-column-8</span><span class="sample-cell">column, 8</span>
+<span class="text-small text-secondary">.push-to-bottom</span><span class="sample-cell">column bottom</span>
+<span class="text-small text-secondary">.align-self-start / .align-self-end</span><span class="sample-cell">column left / right edge</span>
+<span class="text-small text-secondary">.position-relative + .absolute-bottom-right</span><span class="sample-cell">bottom right, 16</span>
+<span class="text-small text-secondary">.tiles-grid</span><span class="sample-cell">row 24, column 8</span>
 </div>
 </div>
 </div>
